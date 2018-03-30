@@ -6,40 +6,25 @@ call plug#begin('~/.vim/plugged')
     Plug 'yegappan/mru'
     Plug 'airblade/vim-gitgutter'
     Plug 'ervandew/supertab'
-    Plug 'tpope/vim-rhubarb'
     Plug 'tpope/vim-repeat'
-    Plug 'tpope/vim-bundler'
-    Plug 'tpope/vim-endwise'
     Plug 'tpope/vim-surround'
     Plug 'tmhedberg/matchit'
-    Plug 'kana/vim-textobj-user'
-    Plug 'nelstrom/vim-textobj-rubyblock'
     Plug 'vim-scripts/tComment'
     Plug 'jremmen/vim-ripgrep'
     Plug 'blarghmatey/split-expander'
     Plug 'farmergreg/vim-lastplace'
     Plug 'tell-k/vim-autopep8'
-
-    " Tmux integration
-    Plug 'benmills/vimux'
-    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'davidhalter/jedi-vim'
+    Plug 'fisadev/vim-isort'
 
     " File system navigation
     Plug 'tpope/vim-eunuch'
     Plug 'kien/ctrlp.vim'
 
     " Syntax highlighting
-    Plug 'vim-ruby/vim-ruby'
-    Plug 'tpope/vim-endwise'
-    Plug 'tpope/vim-rails'
     Plug 'elzr/vim-json'
     Plug 'tpope/vim-markdown'
-    Plug 'kchmck/vim-coffee-script'
-    Plug 'groenewege/vim-less'
-    Plug 'tpope/vim-haml'
     Plug 'pangloss/vim-javascript'
-    Plug 'jparise/vim-graphql'
-    Plug 'zerowidth/vim-copy-as-rtf'
 
     " Syntax errors
     Plug 'w0rp/ale'
@@ -52,8 +37,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive', { 'commit': '444ba9fda5d05aa14c7e8664fa4a66a59c62a550' }
 
     " Themes
-    Plug 'altercation/vim-colors-solarized'
-    Plug 'icymind/NeoSolarized'
+"    Plug 'altercation/vim-colors-solarized'
+"    Plug 'icymind/NeoSolarized'
+"    Plug 'rakr/vim-one'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
     " Testing
     Plug 'janko-m/vim-test'
@@ -70,6 +59,10 @@ map <Space> <leader>
 map <Leader>w :update<CR>
 map <Leader>q :qall<CR>
 map <Leader>gs :Gstatus<CR>
+
+set noshowmode                        " Because of airline
+let g:airline_powerline_fonts = 1
+let g:airline_solarized_bg='dark'
 
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
@@ -118,15 +111,24 @@ set sidescrolloff=10  " Leave 10 characters of horizontal buffer when scrolling
 " Colors & Formatting
 "-------------------------------------------------------------------------------
 
-colorscheme NeoSolarized
-set background=dark
+"highlight Comment cterm=italic gui=italic
+let g:dracula_italic = 1
+color dracula
+highlight Normal ctermbg=NONE
+"highlight LineNr ctermbg=237
+"colorscheme NeoSolarized
+"colorscheme one
+"set background=dark
 
 " Showcase comments in italics
-highlight Comment cterm=italic gui=italic
+
+" Nerd Tree toggling
+map <C-b> :NERDTreeToggle<CR>
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 " Get off my lawn - helpful when learning Vim :)
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-
