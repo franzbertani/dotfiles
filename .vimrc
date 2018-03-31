@@ -111,16 +111,12 @@ set sidescrolloff=10  " Leave 10 characters of horizontal buffer when scrolling
 " Colors & Formatting
 "-------------------------------------------------------------------------------
 
-"highlight Comment cterm=italic gui=italic
 let g:dracula_italic = 1
 color dracula
 highlight Normal ctermbg=NONE
-"highlight LineNr ctermbg=237
-"colorscheme NeoSolarized
-"colorscheme one
-"set background=dark
 
 " Showcase comments in italics
+"highlight Comment cterm=italic  gui=italic
 
 " Nerd Tree toggling
 map <C-b> :NERDTreeToggle<CR>
