@@ -110,9 +110,9 @@ set sidescrolloff=10  " Leave 10 characters of horizontal buffer when scrolling
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-
+set termguicolors
 let g:dracula_italic = 1
-color dracula
+colorscheme dracula
 highlight Normal ctermbg=NONE
 
 " Showcase comments in italics
