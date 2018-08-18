@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'davidhalter/jedi-vim'
     Plug 'fisadev/vim-isort'
     Plug 'vim-scripts/Tabmerge'
+    Plug 'christoomey/vim-tmux-navigator'
     Plug 'ludovicchabant/vim-gutentags'
 
     " File system navigation
@@ -118,10 +119,12 @@ colorscheme sublimemonokai
 highlight Comment cterm=italic  gui=italic
 
 map <C-n> :NERDTreeToggle<CR>
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-map <C-j> <C-W>j
-map <C-k> <C-W>k
+"" Not necessary since I'm using tmux-navigator
+" map <C-h> <C-W>h
+" map <C-l> <C-W>l
+" map <C-j> <C-W>j
+" map <C-k> <C-W>k
+
 
 set mouse=vn
 if !has('nvim')
