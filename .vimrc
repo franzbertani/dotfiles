@@ -8,14 +8,16 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'
     Plug 'tmhedberg/matchit'
-    Plug 'scrooloose/nerdcommenter'
+    Plug 'tpope/vim-commentary'
     Plug 'blarghmatey/split-expander'
     Plug 'farmergreg/vim-lastplace'
     Plug 'tell-k/vim-autopep8'
     Plug 'davidhalter/jedi-vim'
     Plug 'fisadev/vim-isort'
     Plug 'vim-scripts/Tabmerge'
+    Plug 'ludovicchabant/vim-gutentags'
 
     " File system navigation
     Plug 'tpope/vim-eunuch'
@@ -28,7 +30,7 @@ call plug#begin('~/.vim/plugged')
 
     " Display hex colors
     Plug 'chrisbra/Colorizer'
-    
+
     " Syntax errors
     Plug 'w0rp/ale'
     Plug 'ntpeters/vim-better-whitespace'
@@ -50,11 +52,17 @@ call plug#end()
 " Leader Mappings
 map <Space> <leader>
 map <Leader>w :update<CR>
-map <Leader>q :qall<CR>
+map <Leader>q :q<CR>
+map <Leader><ESC> :qall<CR>
+map <Leader>l :set cursorline!<CR>
+map <Leader>r :set relativenumber!<CR>
 
-set noshowmode                        " Because of airline
+if has('nvim')
+    set cursorline
+endif
+
+"set noshowmode                        " Because of airline
 let g:airline_powerline_fonts = 1
-let g:airline_solarized_bg='dark'
 
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
@@ -77,7 +85,7 @@ set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
 set timeoutlen=1000 ttimeoutlen=0     " Remove timeout when hitting escape
 set showcmd                           " Show size of visual selection
-set encoding=utf-8
+set encoding=UTF-8
 " Persistent undo
 set undodir=~/.vim/undo/
 set undofile
@@ -102,10 +110,9 @@ set sidescrolloff=10  " Leave 10 characters of horizontal buffer when scrolling
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-set termguicolors
-let g:sublimemonokai_term_italic = 1
+"set termguicolors
+"let g:sublimemonokai_term_italic = 1
 colorscheme sublimemonokai
-set cursorline
 
 " Showcase comments in italics
 highlight Comment cterm=italic  gui=italic
@@ -116,5 +123,7 @@ map <C-l> <C-W>l
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 
-set mouse=a
-set ttymouse=xterm2
+set mouse=vn
+if !has('nvim')
+    set ttymouse=xterm2
+endif
