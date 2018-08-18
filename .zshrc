@@ -98,9 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim=nvim
-alias ssh="TERM=xterm-256color ssh"
-alias tx="tar -xzvf"
-alias tc="tar -czvf"
+source ~/.aliases
 export SPARK_PATH=~/spark-2.2.0-bin-hadoop2.7
 export SPARK_HOME=~/spark-2.2.0-bin-hadoop2.7

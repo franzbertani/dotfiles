@@ -12,8 +12,9 @@ export PS1=$'\[\e[0;36m\]\W\[\e[0m\]$(__git_ps1) \[\e[0;36m\]\xee\x82\xb0\[\e[0m
 #export PS1="\h:\W \u\$ "
 
 export TERM=xterm-256color-italic
-alias ssh="TERM=xterm-256color ssh"
-alias vim=nvim
+
+source ~/.aliases
+
 #settings for spark
 export SPARK_PATH=~/spark-2.2.0-bin-hadoop2.7
 export SPARK_HOME=~/spark-2.2.0-bin-hadoop2.7
