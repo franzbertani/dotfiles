@@ -1,24 +1,27 @@
 syntax on
+filetype plugin on
 
 call plug#begin('~/.vim/plugged')
 
     " Addons
-    Plug 'scrooloose/nerdtree'
-    Plug 'yegappan/mru'
     Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-repeat'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-fugitive'
+    Plug 'blarghmatey/split-expander'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'davidhalter/jedi-vim'
+    Plug 'farmergreg/vim-lastplace'
+    Plug 'fisadev/vim-isort'
+    Plug 'ludovicchabant/vim-gutentags'
+    Plug 'scrooloose/nerdtree'
+    Plug 'tell-k/vim-autopep8'
     Plug 'tmhedberg/matchit'
     Plug 'tpope/vim-commentary'
-    Plug 'blarghmatey/split-expander'
-    Plug 'farmergreg/vim-lastplace'
-    Plug 'tell-k/vim-autopep8'
-    Plug 'davidhalter/jedi-vim'
-    Plug 'fisadev/vim-isort'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-liquid'
+    Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-surround'
     Plug 'vim-scripts/Tabmerge'
-    Plug 'christoomey/vim-tmux-navigator'
-    Plug 'ludovicchabant/vim-gutentags'
+    Plug 'yegappan/mru'
+    Plug 'vimwiki/vimwiki'
 
     " File system navigation
     Plug 'tpope/vim-eunuch'
@@ -26,7 +29,6 @@ call plug#begin('~/.vim/plugged')
 
     " Syntax highlighting
     Plug 'elzr/vim-json'
-    Plug 'tpope/vim-markdown'
     Plug 'pangloss/vim-javascript'
 
     " Display hex colors
@@ -65,6 +67,7 @@ endif
 "set noshowmode                        " Because of airline
 let g:airline_powerline_fonts = 1
 
+set nocompatible
 set autoread                          " Auto reload changed files
 set wildmenu                          " Tab autocomplete in command mode
 set backspace=indent,eol,start        " http://vi.stackexchange.com/a/2163
@@ -111,7 +114,7 @@ set sidescrolloff=10  " Leave 10 characters of horizontal buffer when scrolling
 "-------------------------------------------------------------------------------
 " Colors & Formatting
 "-------------------------------------------------------------------------------
-"set termguicolors
+" set termguicolors
 "let g:sublimemonokai_term_italic = 1
 colorscheme sublimemonokai
 
@@ -125,8 +128,20 @@ map <C-n> :NERDTreeToggle<CR>
 " map <C-j> <C-W>j
 " map <C-k> <C-W>k
 
-
 set mouse=vn
 if !has('nvim')
     set ttymouse=xterm2
 endif
+
+"--------------------------------------------------------------------------------
+" Vimwiki stuff
+"--------------------------------------------------------------------------------
+
+let g:vimwiki_list=[{'path_html':'$HOME/vimwiki_export/html'}]
+let g:vimwiki_folding='list'
+map <Leader>tt <Plug>VimwikiToggleListItem
+nmap <Leader>+ <Plug>VimwikiIncrementListItem
+vmap <Leader>+ <Plug>VimwikiIncrementListItem
+nmap <Leader>- <Plug>VimwikiDecrementListItem
+vmap <Leader>- <Plug>VimwikiDecrementListItem
+
