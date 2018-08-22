@@ -1,5 +1,4 @@
 syntax on
-filetype plugin on
 
 call plug#begin('~/.vim/plugged')
 
@@ -21,7 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'vim-scripts/Tabmerge'
     Plug 'yegappan/mru'
-    Plug 'vimwiki/vimwiki'
 
     " File system navigation
     Plug 'tpope/vim-eunuch'
@@ -40,6 +38,9 @@ call plug#begin('~/.vim/plugged')
 
     " Markdown support
     Plug 'junegunn/goyo.vim'
+    Plug 'dhruvasagar/vim-table-mode'
+    Plug 'vim-pandoc/vim-pandoc'
+    Plug 'vim-pandoc/vim-pandoc-syntax'
 
     " Themes
     "Plug 'altercation/vim-colors-solarized'
@@ -77,10 +78,10 @@ set splitright                        " Open new splits to the right
 set splitbelow                        " Open new splits to the bottom
 set lazyredraw                        " Reduce the redraw frequency
 set ttyfast                           " Send more characters in fast terminals
-set nowrap                            " Don't wrap long lines
+set spelllang=en_us,it
 set listchars=extends:→               " Show arrow if line continues rightwards
 set listchars+=precedes:←             " Show arrow if line continues leftwards
-set nobackup nowritebackup noswapfile " Turn off backup files
+set nobackup nowritebackup            " Turn off backup files
 set noerrorbells novisualbell         " Turn off visual and audible bells
 set expandtab shiftwidth=4 tabstop=4  " Four spaces for tabs everywhere
 set history=500
@@ -133,15 +134,5 @@ if !has('nvim')
     set ttymouse=xterm2
 endif
 
-"--------------------------------------------------------------------------------
-" Vimwiki stuff
-"--------------------------------------------------------------------------------
-
-let g:vimwiki_list=[{'path_html':'$HOME/vimwiki_export/html'}]
-let g:vimwiki_folding='list'
-map <Leader>tt <Plug>VimwikiToggleListItem
-nmap <Leader>+ <Plug>VimwikiIncrementListItem
-vmap <Leader>+ <Plug>VimwikiIncrementListItem
-nmap <Leader>- <Plug>VimwikiDecrementListItem
-vmap <Leader>- <Plug>VimwikiDecrementListItem
+let g:table_mode_corner='|'
 

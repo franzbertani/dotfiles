@@ -5,3 +5,6 @@ alias tx="tar -xzvf"
 alias tc="tar -czvf"
 
 alias vimrc="vim ~/.vimrc"
+alias taskrc="vim ~/.taskrc"
+
+alias del="rmtrash"

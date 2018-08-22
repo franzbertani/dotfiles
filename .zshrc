@@ -102,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 export SPARK_PATH=~/spark-2.2.0-bin-hadoop2.7
 export SPARK_HOME=~/spark-2.2.0-bin-hadoop2.7
+export PATH="/usr/local/sbin:$PATH"
