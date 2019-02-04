@@ -12,6 +12,7 @@ export PS1=$'\[\e[0;36m\]\W\[\e[0m\]$(__git_ps1) \[\e[0;36m\]\xee\x82\xb0\[\e[0m
 #export PS1="\h:\W \u\$ "
 
 export TERM=xterm-256color-italic
+export EDITOR="/usr/local/bin/mvim"
 
 source ~/.aliases
 
