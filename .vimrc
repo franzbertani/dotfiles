@@ -12,14 +12,9 @@ call plug#begin('~/.vim/plugged')
         let g:lightline = {
               \ 'colorscheme': 'jellybeans',
               \ }
-    Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'justinmk/vim-sneak'
     Plug 'ludovicchabant/vim-gutentags'
     Plug 'mhinz/vim-startify'
-    Plug 'scrooloose/nerdtree'
-        let NERDTreeQuitOnOpen = 1
-        let NERDTreeMinimalUI = 1
-        let NERDTreeDirArrows = 1
     Plug 'osyo-manga/vim-over'
     Plug 'sickill/vim-pasta'
     Plug 'tell-k/vim-autopep8'
@@ -28,7 +23,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround'
+        let g:surround_{char2nr('c')} = "\\\1command\1{\r}"  " https://github.com/tpope/vim-surround/issues/47#issuecomment-4254383
     Plug 'tpope/vim-unimpaired'
+    Plug 'tpope/vim-vinegar'
     Plug 'vim-scripts/Tabmerge'
     Plug 'yegappan/mru'
 
@@ -153,7 +150,7 @@ if $TERM_PROGRAM =~ "iTerm"
 endif
 
 " Close vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " vim-over functions
 function! VisualFindAndReplace()
@@ -171,7 +168,9 @@ map <Leader>l :set cursorline!<CR>
 map <Leader>r :set relativenumber!<CR>
 nnoremap <Leader>fr :call VisualFindAndReplace()<CR>
 xnoremap <Leader>fr :call VisualFindAndReplaceWithSelection()<CR>
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> ,<space> :nohlsearch<CR>
+map <C-i> ysiwcemph<CR>
+map <C-b> ysiwctextbf<CR>
 
 
