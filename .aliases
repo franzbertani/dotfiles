@@ -9,7 +9,7 @@ alias taskrc="vim ~/.taskrc"
 
 alias del="rmtrash"
 
-alias tesi="cd ~/Documents/tesi/src; vim"
+alias tesi="cd ~/Documents/tesi/src"
 alias note="cd ~/note; ./start.sh"
 
 alias gdm="git add . ; git commit -m \"commento inutile\"; git push"

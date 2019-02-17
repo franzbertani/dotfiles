@@ -4,9 +4,11 @@ call plug#begin('~/.vim/plugged')
 
     " Addons
     Plug 'airblade/vim-gitgutter'
+        let g:gitgutter_enabled = 0
     Plug 'blarghmatey/split-expander'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'farmergreg/vim-lastplace'
+    Plug 'freitass/todo.txt-vim'
     Plug 'fisadev/vim-isort'
     Plug 'itchyny/lightline.vim'
         let g:lightline = {
@@ -62,6 +64,8 @@ call plug#begin('~/.vim/plugged')
     " Syntax errors
     Plug 'w0rp/ale'
     Plug 'ntpeters/vim-better-whitespace'
+        let g:better_whitespace_enabled=0
+        let g:strip_whitespace_on_save=1
 
     " Markdown support
     Plug 'junegunn/goyo.vim'
@@ -170,7 +174,7 @@ nnoremap <Leader>fr :call VisualFindAndReplace()<CR>
 xnoremap <Leader>fr :call VisualFindAndReplaceWithSelection()<CR>
 " map <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> ,<space> :nohlsearch<CR>
-map <C-i> ysiwcemph<CR>
+map <C-e> ysiwcemph<CR>
 map <C-b> ysiwctextbf<CR>
 
 
