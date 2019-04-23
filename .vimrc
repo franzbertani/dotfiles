@@ -79,6 +79,8 @@ call plug#begin('~/.vim/plugged')
     "Plug 'joshdick/onedark.vim'
     "Plug 'rakr/vim-one'
     "Plug 'vim-scripts/xoria256.vim'
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'vim-scripts/pyte'
     Plug 'zanglg/nova.vim'
 
 call plug#end()
@@ -95,6 +97,7 @@ set hlsearch                          " Highlight search results
 set ignorecase smartcase              " Search queries intelligently set case
 set incsearch                         " Show search results as you type
 set laststatus=2                      " Show status line on startup
+set lazyredraw
 set listchars+=precedes:←             " Show arrow if line continues leftwards
 set listchars=extends:→               " Show arrow if line continues rightwards
 set mouse=a
@@ -131,8 +134,8 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-colorscheme nova
 set background=dark
+colorscheme nova
 highlight Comment cterm=italic  gui=italic
 
 "" Not necessary since I'm using tmux-navigator
@@ -174,7 +177,16 @@ nnoremap <Leader>fr :call VisualFindAndReplace()<CR>
 xnoremap <Leader>fr :call VisualFindAndReplaceWithSelection()<CR>
 " map <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> ,<space> :nohlsearch<CR>
-map <C-e> ysiwcemph<CR>
-map <C-b> ysiwctextbf<CR>
+map <Leader>em ysiwcemph<CR>
+map <Leader>bo ysiwctextbf<CR>
 
-
+"""LATEX
+	" Code snippets
+	autocmd FileType tex inoremap ,ol \begin{enumerate}<Enter><Enter>\end{enumerate}<Enter><Enter><Esc>3kA\item<Space>
+	autocmd FileType tex inoremap ,ul \begin{itemize}<Enter><Enter>\end{itemize}<Enter><Enter><Esc>3kA\item<Space>
+	autocmd FileType tex inoremap ,li <Enter>\item<Space>
+	autocmd FileType tex inoremap ,ref ~\ref{}<Space><Esc>T{i
+	autocmd FileType tex inoremap ,sec \section{}<Enter><Enter><Esc>2kf}i
+	autocmd FileType tex inoremap ,ssec \subsection{}<Enter><Enter><Esc>2kf}i
+	autocmd FileType tex inoremap ,sssec \subsubsection{}<Enter><Enter><Esc>2kf}i
+	autocmd FileType tex inoremap ,tt \texttt{}<Space><Esc>T{i
