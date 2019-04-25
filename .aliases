@@ -17,3 +17,11 @@ alias gdm="git add . ; git commit -m \"commento inutile\"; git push"
 alias mmdc="/Users/francesco/node_modules/.bin/mmdc"
 # export EDITOR="/usr/local/bin/mvim"
 export EDITOR="/usr/local/bin/vim"
+export MSPGCC_ROOT="$HOME/ti/msp430-gcc/bin"
+
+alias mspcomp="sh /Users/francesco/condivisaFra/msp430/compile.sh"
+
+alias gcc='gcc-8'
+alias cc='gcc-8'
+alias g++='g++-8'
+alias c++='c++-8'

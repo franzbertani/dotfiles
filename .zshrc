@@ -105,6 +105,14 @@ export SPARK_HOME=~/spark-2.2.0-bin-hadoop2.7
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+export PATH="/Users/francesco/ti/msp430-gcc/bin:$PATH"
+export PATH="/usr/local/Cellar/gcc/8.3.0/libexec/gcc/x86_64-apple-darwin18.2.0/8.3.0:$PATH"
+
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/francesco/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/francesco/google-cloud-sdk/path.zsh.inc'; fi
@@ -112,5 +120,6 @@ if [ -f '/Users/francesco/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/franc
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/francesco/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/francesco/google-cloud-sdk/completion.zsh.inc'; fi
 
-# The next line enables shell command completion for tmuxinator
-source ~/.dotfiles/tmuxinator.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

@@ -1,2 +1,4 @@
-set guifont=Roboto\ Mono\ for\ Powerline:h14
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
+colorscheme pyte
 set vb t_vb=.
+

@@ -32,12 +32,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'yegappan/mru'
 
     " snippets
-    Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
-        let g:UltiSnipsSnippetDirectories = ['~/.vim/plugged/vim-snippets/UltiSnips']
-        let g:UltiSnipsExpandTrigger="<tab>"
-        let g:UltiSnipsJumpForwardTrigger="<c-b>"
-        let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+    " Plug 'SirVer/ultisnips'
+    " Plug 'honza/vim-snippets'
+    "     let g:UltiSnipsSnippetDirectories = ['~/.vim/plugged/vim-snippets/UltiSnips']
+    "     let g:UltiSnipsExpandTrigger="<tab>"
+    "     let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    "     let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
     " LaTeX stuff
     Plug 'lervag/vimtex'
@@ -79,8 +79,8 @@ call plug#begin('~/.vim/plugged')
     "Plug 'joshdick/onedark.vim'
     "Plug 'rakr/vim-one'
     "Plug 'vim-scripts/xoria256.vim'
-    Plug 'NLKNguyen/papercolor-theme'
-    Plug 'vim-scripts/pyte'
+    "Plug 'NLKNguyen/papercolor-theme'
+    "Plug 'vim-scripts/pyte'
     Plug 'zanglg/nova.vim'
 
 call plug#end()
