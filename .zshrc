@@ -63,9 +63,7 @@ DEFAULT_USER=`whoami`
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
   osx
-  taskwarrior
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,13 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.aliases
+export EDITOR="/usr/local/bin/nvim"
+export MSPGCC_ROOT="$HOME/ti/msp430-gcc/bin"
+export UNCRUSTIFY_CONFIG="$HOME/.dotfiles/uncrustify-contiki.cfg"
 export SPARK_PATH=~/spark-2.2.0-bin-hadoop2.7
 export SPARK_HOME=~/spark-2.2.0-bin-hadoop2.7
+
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 export PATH="/Users/francesco/ti/msp430-gcc/bin:$PATH"
 export PATH="/usr/local/Cellar/gcc/8.3.0/libexec/gcc/x86_64-apple-darwin18.2.0/8.3.0:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 # virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
@@ -122,4 +125,11 @@ if [ -f '/Users/francesco/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+iterm2_print_user_vars() {
+  iterm2_set_user_var virtualenv $(echo ${VIRTUAL_ENV:t})
+}
 
+
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/francesco/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;

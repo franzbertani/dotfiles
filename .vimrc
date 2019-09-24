@@ -1,3 +1,4 @@
+filetype plugin indent on
 syntax on
 
 call plug#begin('~/.vim/plugged')
@@ -10,13 +11,18 @@ call plug#begin('~/.vim/plugged')
     Plug 'farmergreg/vim-lastplace'
     Plug 'freitass/todo.txt-vim'
     Plug 'fisadev/vim-isort'
+    Plug 'heavenshell/vim-pydocstring'
+        let g:pydocstring_templates_dir = '~/.vim/plugged/vim-pydocstring/test/templates/numpy'
+        let g:pydocstring_enable_mapping = 0
     Plug 'itchyny/lightline.vim'
         let g:lightline = {
               \ 'colorscheme': 'jellybeans',
               \ }
-    Plug 'justinmk/vim-sneak'
+    " Plug 'justinmk/vim-sneak'
     Plug 'ludovicchabant/vim-gutentags'
-    Plug 'mhinz/vim-startify'
+    Plug 'mattn/emmet-vim'
+    Plug 'matze/vim-move'
+    " Plug 'mhinz/vim-startify'
     Plug 'osyo-manga/vim-over'
     Plug 'sickill/vim-pasta'
     Plug 'tell-k/vim-autopep8'
@@ -30,6 +36,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-vinegar'
     Plug 'vim-scripts/Tabmerge'
     Plug 'yegappan/mru'
+
+    " React
+    Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
+    Plug 'prettier/vim-prettier', {
+      \ 'do': 'npm install',
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
     " snippets
     " Plug 'SirVer/ultisnips'
@@ -85,7 +98,6 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-filetype plugin indent on
 
 set autoread                          " Auto reload changed files
 set backspace=indent,eol,start        " http://vi.stackexchange.com/a/2163
@@ -130,6 +142,13 @@ if (has("nvim"))
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 
+" vim hardcodes background color erase even if the terminfo file does
+" not contain bce (not to mention that libvte based terminals
+" incorrectly contain bce in their terminfo files). This causes
+" incorrect background rendering when using a color theme with a
+" background color.
+let &t_ut=''
+
 if (has("termguicolors"))
     set termguicolors
 endif
@@ -173,6 +192,7 @@ map <Leader>q :q<CR>
 map <Leader><ESC> :qall<CR>
 map <Leader>l :set cursorline!<CR>
 map <Leader>r :set relativenumber!<CR>
+map <Leader>pd :Pydocstring<CR>
 nnoremap <Leader>fr :call VisualFindAndReplace()<CR>
 xnoremap <Leader>fr :call VisualFindAndReplaceWithSelection()<CR>
 " map <C-n> :NERDTreeToggle<CR>
@@ -190,3 +210,9 @@ map <Leader>bo ysiwctextbf<CR>
 	autocmd FileType tex inoremap ,ssec \subsection{}<Enter><Enter><Esc>2kf}i
 	autocmd FileType tex inoremap ,sssec \subsubsection{}<Enter><Enter><Esc>2kf}i
 	autocmd FileType tex inoremap ,tt \texttt{}<Space><Esc>T{i
+
+"""REACT
+    autocmd FileType javascript.jsx setlocal ts=2 sts=2 sw=2
+
+"""SIREN COMMAND
+    autocmd FileType c nnoremap <Leader>sc <S-O>#ifdef DEBUG<Enter>siren_command("PRINTF:\n",);<Enter>#endif<Esc>k^f\i
