@@ -35,7 +35,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
-
+Plug 'yegappan/mru'
 call plug#end()
 
 "}}}
@@ -65,7 +65,6 @@ set nowrap
 set shiftwidth=4
 set spelllang=en_us,it
 set tabstop=4
-set textwidth=80
 "}}}
 
 " Backup and Undo{{{
@@ -92,6 +91,11 @@ set splitbelow
 set splitright
 set ttyfast
 set lazyredraw
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v/
+
+
 "}}}
 
 " Wildmenu {{{
@@ -109,6 +113,11 @@ set wildmenu                          " Tab autocomplete in command mode
 nnoremap <Leader>k :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
 vnoremap <Leader>k y :%s/<C-r>"//gc<Left><Left><Left>
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+"}}}
+
+" Terminal {{{
+
+tnoremap <Esc> <C-\><C-n>
 "}}}
 
 " Section Folding {{{
