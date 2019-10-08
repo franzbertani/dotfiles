@@ -3466,13 +3466,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 707 400 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 516 620 392 0 0 1920 1080 </string>
+	<string>650 606 620 392 0 0 1920 1200 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 150 606 469 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>250 689 770 429 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>209 238 1408 877 0 0 1920 1177 </string>
+	<string>191 124 1248 800 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1261 556 648 472 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -8324,6 +8324,7 @@
 		<string>3.3.2</string>
 		<string>3.2.9</string>
 		<string>3.3.1</string>
+		<string>3.3.4</string>
 		<string>3.3.0</string>
 		<string>3.3.3</string>
 	</array>
@@ -8337,9 +8338,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{1048, 895}</string>
+		<string>{268, 676}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -8352,7 +8353,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>84E6558A-777D-4842-AF93-26C58B862C99</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>19</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>1</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586693579.87327504</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -9149,7 +9154,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-09-17T10:57:33Z</date>
+	<date>2019-10-07T11:09:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -9195,7 +9200,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.3</string>
+	<string>3.3.4</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
