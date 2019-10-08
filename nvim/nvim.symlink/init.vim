@@ -80,6 +80,7 @@ set undoreload=10000
 
 highlight Comment cterm=italic  gui=italic
 set autoread
+set hidden
 set mouse=a
 set noshowmode
 set number
@@ -91,6 +92,7 @@ set splitbelow
 set splitright
 set ttyfast
 set lazyredraw
+set noea
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v/
