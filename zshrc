@@ -116,10 +116,12 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-iterm2_print_user_vars() {
-  iterm2_set_user_var virtualenv $(echo ${VIRTUAL_ENV:t})
-}
+if [ $TERM = "xterm-256color-italic" ]; then
+    test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+    iterm2_print_user_vars() {
+      iterm2_set_user_var virtualenv $(echo ${VIRTUAL_ENV:t})
+    }
+fi
 
 
 
