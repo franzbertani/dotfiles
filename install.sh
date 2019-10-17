@@ -21,6 +21,8 @@ setSymlink(){
     ln -s ~/.dotfiles/global_ignore  ~/.global_ignore
     ln -s ~/.dotfiles/vimrc  ~/.vimrc
     ln -s ~/.dotfiles/tmux.conf  ~/.tmux.conf
+    mkdir -p ~/.config/kitty
+    ln -sfF ~/.dotfiles/kitty.conf  ~/.config/kitty/kitty.conf
 }
 
 installBrew(){
@@ -29,7 +31,7 @@ installBrew(){
     echo '    Install brew tools'
     brew install ctags gcc imagemagick neovim python tmux uncrustify vim wget zsh
     echo '    Install cask apps'
-    brew cask install docker firefox font-fira-code iterm2 karabiner-elements keepassxc skim spotify syncthing-app vimr vlc
+    brew cask install docker firefox font-fira-code iterm2 karabiner-elements keepassxc skim spotify syncthing-app vimr vlc kitty
     echo '    Configure nvim'
     nvim/install.sh
 }
@@ -60,7 +62,7 @@ setParameters(){
             x)
                 cliTools
                 ;;
-            h|?)
+            *)
                 usage
                 ;;
         esac

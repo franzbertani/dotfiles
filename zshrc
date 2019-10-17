@@ -125,3 +125,18 @@ iterm2_print_user_vars() {
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/francesco/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# syntax highligting (brew install zsh-syntax-highlighting)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# autosuggestions (brew install zsh-autosuggestions)
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+if [ $TERM = "xterm-kitty" ]; then
+    autoload -Uz compinit
+    compinit
+    # Completion for kitty
+    kitty + complete setup zsh | source /dev/stdin
+fi
+

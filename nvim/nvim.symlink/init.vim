@@ -3,7 +3,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'caksoylar/vim-mysticaltutor'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
@@ -11,6 +10,9 @@ Plug 'itchyny/lightline.vim'
     let g:lightline = {
         \ 'colorscheme': 'jellybeans',
         \ }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'lervag/vimtex'
     let g:vimtex_compiler_progname = 'nvr'
@@ -27,13 +29,15 @@ Plug 'lervag/vimtex'
       \ },
       \}
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'matze/vim-move'
+Plug 'mhinz/vim-startify'
 Plug 'sickill/vim-pasta'
-Plug 'tpope/vim-unimpaired'
 Plug 'tell-k/vim-autopep8'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 Plug 'yegappan/mru'
 call plug#end()
@@ -84,6 +88,7 @@ set hidden
 set mouse=a
 set noshowmode
 set number
+set relativenumber
 set numberwidth=1
 set scrolloff=5
 set showcmd
@@ -97,8 +102,16 @@ set noea
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v/
 
-
 "}}}
+
+" Splits and Tabs {{{
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" }}}
 
 " Wildmenu {{{
 
