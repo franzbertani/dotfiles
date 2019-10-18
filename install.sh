@@ -8,7 +8,6 @@ usage(){
     printf "OPTIONS\n"
     printf -- "-l to symlink dotfiles\n"
     printf -- "-b to install brew and brew cask software\n"
-    printf -- "-o to setup oh-my-zsh\n"
     printf -- "-x to install command line tools\n"
     echo
     exit 1
@@ -16,6 +15,7 @@ usage(){
 
 setSymlink(){
     ln -s ~/.dotfiles/aliases  ~/.aliases
+    mkdir -p ~/.cache/zsh
     ln -s ~/.dotfiles/zshrc  ~/.zshrc
     ln -s ~/.dotfiles/bash_profile  ~/.bash_profile
     ln -s ~/.dotfiles/global_ignore  ~/.global_ignore
@@ -41,12 +41,6 @@ cliTools(){
     sudo xcodebuild -license accept
 }
 
-ohMyZsh(){
-    echo '    Install ohmyzsh'
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    ln -s ~/.dotfiles/mytheme.zsh-theme  ~/.oh-my-zsh/custom/themes/mytheme.zsh-theme
-}
-
 setParameters(){
     while getopts "lbox?h" o; do
         case "${o}" in
@@ -55,9 +49,6 @@ setParameters(){
                 ;;
             b)
                 installBrew
-                ;;
-            o)
-                ohMyZsh
                 ;;
             x)
                 cliTools
