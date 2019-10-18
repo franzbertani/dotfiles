@@ -19,6 +19,7 @@ HISTFILE=~/.cache/zsh/history
 # autocompletion
 autoload -Uz compinit
 zstyle ':completion:*' menu select
+zstyle ':completion:*' group-name ''
 zmodload -i zsh/complist
 typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
 if [ $(date +'%j') != $updated_at ]; then
