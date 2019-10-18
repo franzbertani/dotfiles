@@ -4,6 +4,14 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'caksoylar/vim-mysticaltutor'
 Plug 'dense-analysis/ale'
+    let g:ale_virtualtext_cursor = 1
+    " let g:ale_virtualtext_delay = 200
+    hi link ALEVirtualTextError Error
+    hi link ALEVirtualTextWarning Warning
+    hi link ALEVirtualTextInfo Info
+    hi link ALEVirtualTextStyleError Error
+    hi link ALEVirtualTextStyleWarning Warning
+
 Plug 'ervandew/supertab'
 Plug 'farmergreg/vim-lastplace'
 Plug 'itchyny/lightline.vim'

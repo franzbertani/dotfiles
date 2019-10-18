@@ -3474,7 +3474,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>250 689 770 429 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 5 1920 344 0 0 1920 1057 </string>
+	<string>957 463 648 534 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1261 556 648 472 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -8340,14 +8340,16 @@
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.57647058823529407</real>
+				<real>0.56862745098039214</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.4392156862745098</real>
+				<real>0.43137254901960786</real>
 				<key>Red Component</key>
-				<real>0.8784313725490196</real>
+				<real>0.86274509803921573</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -8395,14 +8397,16 @@
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.74117647058823533</real>
+				<real>0.56862745098039214</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.7686274509803922</real>
+				<real>0.70588235294117652</real>
 				<key>Red Component</key>
-				<real>0.62745098039215685</real>
+				<real>0.34509803921568627</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -8461,14 +8465,16 @@
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.59215686274509804</real>
+				<real>0.52243857383258763</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.74509803921568629</real>
+				<real>0.6239013671875</real>
 				<key>Red Component</key>
-				<real>0.36078431372549019</real>
+				<real>0.35719914548099041</real>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -9289,13 +9295,13 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.6</string>
-		<string>3.3.4</string>
+		<string>3.3.0</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
-		<string>3.3.0</string>
+		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -9316,7 +9322,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{576, 754}</string>
+		<string>{258, 577}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -9329,7 +9335,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>84E6558A-777D-4842-AF93-26C58B862C99</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>28</integer>
+	<integer>29</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
