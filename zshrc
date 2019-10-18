@@ -5,7 +5,7 @@ DEFAULT_USER=`whoami`
 
 # enable colors and change prompt to [name folder]$ 
 autoload -U colors && colors
-PS1="%B%{$fg[magenta]%}[%{$fg[yellow]%}%n %{$fg[blue]%}%~%{$fg[magenta]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[yellow]%}[%{$fg[blue]%}%~%{$fg[yellow]%}]%{$reset_color%}$%b "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export LS_COLORS='di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=34;43'
@@ -15,8 +15,14 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
+# cd
+setopt auto_cd
+
 
 # autocompletion
+setopt auto_menu
+setopt always_to_end
+setopt complete_in_word
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' group-name ''
