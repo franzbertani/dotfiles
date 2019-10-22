@@ -5,7 +5,7 @@ DEFAULT_USER=`whoami`
 
 # enable colors and change prompt to [name folder]$ 
 autoload -U colors && colors
-PS1="%B%{$fg[yellow]%}[%{$fg[blue]%}%~%{$fg[yellow]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[yellow]%}[%{$fg[red]%}%n%{$fg[yellow]%}@%{$fg[blue]%}%~%{$fg[yellow]%}]%{$reset_color%}$%b "
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export LS_COLORS='di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=34;43'
@@ -56,7 +56,7 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper_lazy.sh
+[ -f /usr/local/bin/virtualenvwrapper_lazy.sh ] && source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 
 # for iterm2 statusbar
@@ -73,10 +73,19 @@ HEROKU_AC_ZSH_SETUP_PATH=/Users/francesco/Library/Caches/heroku/autocomplete/zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# syntax highligting (brew install zsh-syntax-highlighting)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# autosuggestions (brew install zsh-autosuggestions)
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # syntax highligting (brew install zsh-syntax-highlighting)
+    source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    # autosuggestions (brew install zsh-autosuggestions)
+    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+    # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+    source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    # autosuggestions
+    # git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # Completion for kitty
 if [ $TERM = "xterm-kitty" ]; then
