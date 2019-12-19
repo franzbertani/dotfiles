@@ -1,0 +1,2406 @@
+Using FRAM
+Capacitor.setPowerMode OFF
+Capacity = 4.7E-5
+Set voltage reader to <edu.umass.energy.Capacitor, C=4.7E-5F>
+25272.0
+__crt0_call_exit 20206
+_exit 36456
+exit 36456
+MSPSim>Autoloading script: /Users/francesco/git/BatterylessSim/scripts/simple.sc
+Debug is set to false
+-----------------------------------------------cpuloop() called
+
+MSPSim 0.99 starting firmware: /Users/francesco/git/BatterylessSim/firmware/exp6989/main.out
+-----------------------------------------------
+MSPSim>7701 printf:  running @ 1000000 Hz
+11119 printf:  initializing board after first boot.
+[SET_VON] Setting V On to 3.84
+[GET_CCOUNT] Requested timer main --- start cc=1017 final cc=1214 delta cc=197
+[CAP] Testin execution of  main for 197.0 microseconds, with trace at 0.0 milliseconds
+[CAP] No resets while running  main
+[GET_CCOUNT] Requested timer scheduler --- start cc=1317 final cc=1339 delta cc=22
+[CAP] Testin execution of  scheduler restore for 22.0 microseconds, with trace at 0.0 milliseconds
+[CAP] No resets while running  scheduler restore
+[GET_TIME] ERROR: requested unexistent timer 'misd(SENSE)' persisted 0
+40471 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=1682 final cc=81874 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 0.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=1447 final cc=82132 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 80.0 milliseconds
+[CAP] No resets while running  schedule
+146245 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=82491 final cc=114661 delta cc=32170
+[CAP] Testin execution of  median for 32170.0 microseconds, with trace at 161.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=82242 final cc=114915 delta cc=32673
+[CAP] Testin execution of  schedule for 32673.0 microseconds, with trace at 193.0 milliseconds
+[CAP] No resets while running  schedule
+201808 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=115262 final cc=165432 delta cc=50170
+[CAP] Testin execution of  lowpass for 50170.0 microseconds, with trace at 225.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=115025 final cc=165762 delta cc=50737
+[CAP] Testin execution of  schedule for 50737.0 microseconds, with trace at 276.0 milliseconds
+[CAP] No resets while running  schedule
+275709 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=166109 final cc=181279 delta cc=15170
+[CAP] Testin execution of  magnitude for 15170.0 microseconds, with trace at 326.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=165872 final cc=181533 delta cc=15661
+[CAP] Testin execution of  schedule for 15662.0 microseconds, with trace at 342.0 milliseconds
+[CAP] No resets while running  schedule
+314528 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=181880 final cc=202062 delta cc=20182
+[CAP] Testin execution of  compress for 20182.0 microseconds, with trace at 357.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=181643 final cc=202338 delta cc=20695
+[CAP] Testin execution of  schedule for 20695.0 microseconds, with trace at 377.0 milliseconds
+[CAP] No resets while running  schedule
+358387 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=202685 final cc=217833 delta cc=15148
+[CAP] Testin execution of  classify for 15148.0 microseconds, with trace at 398.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=202448 final cc=218087 delta cc=15639
+[CAP] Testin execution of  schedule for 15639.0 microseconds, with trace at 413.0 milliseconds
+[CAP] No resets while running  schedule
+397448 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=218446 final cc=248594 delta cc=30148
+[CAP] Testin execution of  operate for 30148.0 microseconds, with trace at 429.0 milliseconds
+[CAP] No resets while running  operate
+439456 printf:  updating tput after operate, value=-30148
+458783 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=218197 final cc=265980 delta cc=47783
+[CAP] Testin execution of  schedule for 47783.0 microseconds, with trace at 459.0 milliseconds
+[CAP] No resets while running  schedule
+477244 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=266325 final cc=346517 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 507.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=266090 final cc=346775 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 587.0 milliseconds
+[CAP] No resets while running  schedule
+583018 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=347134 final cc=379386 delta cc=32252
+[CAP] Testin execution of  median for 32253.0 microseconds, with trace at 668.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=346885 final cc=379640 delta cc=32755
+[CAP] Testin execution of  schedule for 32755.0 microseconds, with trace at 700.0 milliseconds
+[CAP] No resets while running  schedule
+638743 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=379987 final cc=430239 delta cc=50252
+[CAP] Testin execution of  lowpass for 50252.0 microseconds, with trace at 733.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=379750 final cc=430569 delta cc=50819
+[CAP] Testin execution of  schedule for 50819.0 microseconds, with trace at 783.0 milliseconds
+[CAP] No resets while running  schedule
+712806 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=430916 final cc=446168 delta cc=15252
+[CAP] Testin execution of  magnitude for 15252.0 microseconds, with trace at 834.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=430679 final cc=446422 delta cc=15743
+[CAP] Testin execution of  schedule for 15743.0 microseconds, with trace at 849.0 milliseconds
+[CAP] No resets while running  schedule
+751787 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=446769 final cc=461999 delta cc=15230
+[CAP] Testin execution of  classify for 15230.0 microseconds, with trace at 865.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=446532 final cc=462253 delta cc=15721
+[CAP] Testin execution of  schedule for 15721.0 microseconds, with trace at 880.0 milliseconds
+[CAP] No resets while running  schedule
+790290 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=462612 final cc=492842 delta cc=30230
+[CAP] Testin execution of  operate for 30230.0 microseconds, with trace at 896.0 milliseconds
+[CAP] No resets while running  operate
+831740 printf:  updating tput after operate, value=-30230
+851047 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=462363 final cc=510210 delta cc=47847
+[CAP] Testin execution of  schedule for 47847.0 microseconds, with trace at 926.0 milliseconds
+[CAP] No resets while running  schedule
+869488 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=510567 final cc=600715 delta cc=90148
+[CAP] Testin execution of  send for 90148.0 microseconds, with trace at 974.0 milliseconds
+[CAP] No resets while running  send
+971518 printf:  updating tput after send, value=-90148
+973797 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=510320 final cc=601078 delta cc=90758
+[CAP] Testin execution of  schedule for 90758.0 microseconds, with trace at 1064.0 milliseconds
+[CAP] No resets while running  schedule
+992243 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=601423 final cc=681615 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 1155.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=601188 final cc=681873 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 1235.0 milliseconds
+[CAP] No resets while running  schedule
+1098017 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=682232 final cc=714476 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 1316.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=681983 final cc=714730 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 1348.0 milliseconds
+[CAP] No resets while running  schedule
+1153814 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=715077 final cc=765321 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 1381.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=714840 final cc=765651 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 1431.0 milliseconds
+[CAP] No resets while running  schedule
+1227589 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=765998 final cc=781242 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 1482.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=765761 final cc=781496 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 1497.0 milliseconds
+[CAP] No resets while running  schedule
+1266642 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=781843 final cc=797065 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 1513.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=781606 final cc=797319 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 1528.0 milliseconds
+[CAP] No resets while running  schedule
+1305217 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=797678 final cc=827900 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 1544.0 milliseconds
+[CAP] No resets while running  operate
+1346739 printf:  updating tput after operate, value=-30222
+1366033 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=797429 final cc=845255 delta cc=47826
+[CAP] Testin execution of  schedule for 47826.0 microseconds, with trace at 1574.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 1622.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=845365 final cc=845595 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 1623.0 milliseconds
+[CAP] No resets while running  schedule
+1398327 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=845940 final cc=926132 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 1623.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=845705 final cc=926390 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 1703.0 milliseconds
+[CAP] No resets while running  schedule
+1504101 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=926749 final cc=958993 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 1784.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=926500 final cc=959247 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 1816.0 milliseconds
+[CAP] No resets while running  schedule
+1559898 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=959594 final cc=1009838 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 1849.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=959357 final cc=1010168 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 1899.0 milliseconds
+[CAP] No resets while running  schedule
+1633673 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=1010515 final cc=1025759 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 1950.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=1010278 final cc=1026013 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 1965.0 milliseconds
+[CAP] No resets while running  schedule
+1672726 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=1026360 final cc=1046624 delta cc=20264
+[CAP] Testin execution of  compress for 20264.0 microseconds, with trace at 1981.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=1026123 final cc=1046900 delta cc=20777
+[CAP] Testin execution of  schedule for 20777.0 microseconds, with trace at 2001.0 milliseconds
+[CAP] No resets while running  schedule
+1716747 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=1047247 final cc=1062469 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 2022.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=1047010 final cc=1062723 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 2037.0 milliseconds
+[CAP] No resets while running  schedule
+1755322 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=1063082 final cc=1093304 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 2053.0 milliseconds
+[CAP] No resets while running  operate
+1796844 printf:  updating tput after operate, value=-30222
+1815043 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=1062833 final cc=1109564 delta cc=46731
+[CAP] Testin execution of  schedule for 46731.0 microseconds, with trace at 2083.0 milliseconds
+[CAP] No resets while running  schedule
+1833186 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=1109909 final cc=1190101 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 2130.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=1109674 final cc=1190359 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 2210.0 milliseconds
+[CAP] No resets while running  schedule
+1938960 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=1190718 final cc=1222962 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 2291.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=1190469 final cc=1223216 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 2323.0 milliseconds
+[CAP] No resets while running  schedule
+1994757 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=1223563 final cc=1273807 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 2356.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=1223326 final cc=1274137 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 2406.0 milliseconds
+[CAP] No resets while running  schedule
+2068532 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=1274484 final cc=1289728 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 2457.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=1274247 final cc=1289982 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 2472.0 milliseconds
+[CAP] No resets while running  schedule
+2107585 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=1290329 final cc=1305551 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 2488.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=1290092 final cc=1305805 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 2503.0 milliseconds
+[CAP] No resets while running  schedule
+2146160 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=1306164 final cc=1336386 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 2519.0 milliseconds
+[CAP] No resets while running  operate
+2187682 printf:  updating tput after operate, value=-30222
+2205687 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=1305915 final cc=1352450 delta cc=46535
+[CAP] Testin execution of  schedule for 46535.0 microseconds, with trace at 2549.0 milliseconds
+[CAP] No resets while running  schedule
+2223842 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=1352803 final cc=1443033 delta cc=90230
+[CAP] Testin execution of  send for 90230.0 microseconds, with trace at 2595.0 milliseconds
+[CAP] No resets while running  send
+2325314 printf:  updating tput after send, value=-90230
+2327593 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=1352560 final cc=1443398 delta cc=90838
+[CAP] Testin execution of  schedule for 90838.0 microseconds, with trace at 2686.0 milliseconds
+[CAP] No resets while running  schedule
+2346001 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=1443743 final cc=1523935 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 2776.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=1443508 final cc=1524193 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 2857.0 milliseconds
+[CAP] No resets while running  schedule
+2451775 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=1524552 final cc=1556796 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 2937.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=1524303 final cc=1557050 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 2969.0 milliseconds
+[CAP] No resets while running  schedule
+2507572 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=1557397 final cc=1607641 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 3002.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=1557160 final cc=1607971 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 3052.0 milliseconds
+[CAP] No resets while running  schedule
+2581347 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=1608318 final cc=1623562 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 3103.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=1608081 final cc=1623816 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 3119.0 milliseconds
+[CAP] No resets while running  schedule
+2620400 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=1624163 final cc=1639385 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 3134.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=1623926 final cc=1639639 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 3149.0 milliseconds
+[CAP] No resets while running  schedule
+2658975 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=1639998 final cc=1670220 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 3165.0 milliseconds
+[CAP] No resets while running  operate
+2700497 printf:  updating tput after operate, value=-30222
+2719813 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=1639749 final cc=1687599 delta cc=47850
+[CAP] Testin execution of  schedule for 47850.0 microseconds, with trace at 3195.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 3243.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=1687709 final cc=1687939 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 3244.0 milliseconds
+[CAP] No resets while running  schedule
+2751989 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=1688284 final cc=1768476 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 3244.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=1688049 final cc=1768734 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 3325.0 milliseconds
+[CAP] No resets while running  schedule
+2857763 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=1769093 final cc=1801337 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 3405.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=1768844 final cc=1801591 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 3438.0 milliseconds
+[CAP] No resets while running  schedule
+2913560 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=1801938 final cc=1852182 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 3470.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=1801701 final cc=1852512 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 3521.0 milliseconds
+[CAP] No resets while running  schedule
+2987335 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=1852859 final cc=1868103 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 3571.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=1852622 final cc=1868357 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 3587.0 milliseconds
+[CAP] No resets while running  schedule
+3026388 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=1868704 final cc=1888960 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 3602.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=1868467 final cc=1889236 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 3623.0 milliseconds
+[CAP] No resets while running  schedule
+3070481 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=1889583 final cc=1904805 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 3643.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=1889346 final cc=1905059 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 3659.0 milliseconds
+[CAP] No resets while running  schedule
+3109056 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=1905418 final cc=1935640 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 3674.0 milliseconds
+[CAP] No resets while running  operate
+3150578 printf:  updating tput after operate, value=-30222
+3168752 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=1905169 final cc=1951873 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 3705.0 milliseconds
+[CAP] No resets while running  schedule
+3186893 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=1952218 final cc=2032410 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 3751.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=1951983 final cc=2032668 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 3831.0 milliseconds
+[CAP] No resets while running  schedule
+3292667 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=2033027 final cc=2065271 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 3912.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=2032778 final cc=2065525 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 3944.0 milliseconds
+[CAP] No resets while running  schedule
+3348464 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=2065872 final cc=2116116 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 3977.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=2065635 final cc=2116446 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 4027.0 milliseconds
+[CAP] No resets while running  schedule
+3422239 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=2116793 final cc=2132037 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 4078.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=2116556 final cc=2132291 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 4093.0 milliseconds
+[CAP] No resets while running  schedule
+3461292 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=2132638 final cc=2147860 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 4109.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=2132401 final cc=2148114 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 4124.0 milliseconds
+[CAP] No resets while running  schedule
+3499867 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=2148473 final cc=2178695 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 4140.0 milliseconds
+[CAP] No resets while running  operate
+3541389 printf:  updating tput after operate, value=-30222
+3559394 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=2148224 final cc=2194761 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 4170.0 milliseconds
+[CAP] No resets while running  schedule
+3577631 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=2195114 final cc=2285336 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 4217.0 milliseconds
+[CAP] No resets while running  send
+3679175 printf:  updating tput after send, value=-90222
+3681454 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=2194871 final cc=2285699 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 4307.0 milliseconds
+[CAP] No resets while running  schedule
+3699820 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=2286044 final cc=2366236 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 4398.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=2285809 final cc=2366494 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 4478.0 milliseconds
+[CAP] No resets while running  schedule
+3805594 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=2366853 final cc=2399097 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 4559.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=2366604 final cc=2399351 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 4591.0 milliseconds
+[CAP] No resets while running  schedule
+3861391 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=2399698 final cc=2449942 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 4624.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=2399461 final cc=2450272 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 4674.0 milliseconds
+[CAP] No resets while running  schedule
+3935166 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=2450619 final cc=2465863 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 4725.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=2450382 final cc=2466117 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 4740.0 milliseconds
+[CAP] No resets while running  schedule
+3974219 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=2466464 final cc=2481686 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 4756.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=2466227 final cc=2481940 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 4771.0 milliseconds
+[CAP] No resets while running  schedule
+4012794 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=2482299 final cc=2512521 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 4787.0 milliseconds
+[CAP] No resets while running  operate
+4054316 printf:  updating tput after operate, value=-30222
+4073609 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=2482050 final cc=2529875 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 4817.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 4865.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=2529985 final cc=2530215 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 4866.0 milliseconds
+[CAP] No resets while running  schedule
+4105863 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=2530560 final cc=2610752 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 4866.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=2530325 final cc=2611010 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 4946.0 milliseconds
+[CAP] No resets while running  schedule
+4211637 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=2611369 final cc=2643613 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 5027.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=2611120 final cc=2643867 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 5059.0 milliseconds
+[CAP] No resets while running  schedule
+4267434 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=2644214 final cc=2694458 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 5092.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=2643977 final cc=2694788 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 5142.0 milliseconds
+[CAP] No resets while running  schedule
+4341209 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=2695135 final cc=2710379 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 5193.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=2694898 final cc=2710633 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 5208.0 milliseconds
+[CAP] No resets while running  schedule
+4380262 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=2710980 final cc=2731236 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 5224.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=2710743 final cc=2731512 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 5244.0 milliseconds
+[CAP] No resets while running  schedule
+4424355 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=2731859 final cc=2747081 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 5265.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=2731622 final cc=2747335 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 5280.0 milliseconds
+[CAP] No resets while running  schedule
+4462930 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=2747694 final cc=2777916 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 5296.0 milliseconds
+[CAP] No resets while running  operate
+4504452 printf:  updating tput after operate, value=-30222
+4522631 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=2747445 final cc=2794156 delta cc=46711
+[CAP] Testin execution of  schedule for 46711.0 microseconds, with trace at 5326.0 milliseconds
+[CAP] No resets while running  schedule
+4540694 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=2794501 final cc=2874693 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 5373.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=2794266 final cc=2874951 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 5453.0 milliseconds
+[CAP] No resets while running  schedule
+4646468 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=2875310 final cc=2907554 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 5534.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=2875061 final cc=2907808 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 5566.0 milliseconds
+[CAP] No resets while running  schedule
+4702265 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=2908155 final cc=2958399 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 5599.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=2907918 final cc=2958729 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 5649.0 milliseconds
+[CAP] No resets while running  schedule
+4776040 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=2959076 final cc=2974320 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 5700.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=2958839 final cc=2974574 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 5715.0 milliseconds
+[CAP] No resets while running  schedule
+4815093 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=2974921 final cc=2990143 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 5731.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=2974684 final cc=2990397 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 5746.0 milliseconds
+[CAP] No resets while running  schedule
+4853668 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=2990756 final cc=3020978 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 5762.0 milliseconds
+[CAP] No resets while running  operate
+4895190 printf:  updating tput after operate, value=-30222
+4913197 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=2990507 final cc=3037044 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 5792.0 milliseconds
+[CAP] No resets while running  schedule
+4931432 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=3037397 final cc=3127619 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 5839.0 milliseconds
+[CAP] No resets while running  send
+5032976 printf:  updating tput after send, value=-90222
+5035255 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=3037154 final cc=3127984 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 5929.0 milliseconds
+[CAP] No resets while running  schedule
+5053343 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=3128329 final cc=3208521 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 6020.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=3128094 final cc=3208779 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 6100.0 milliseconds
+[CAP] No resets while running  schedule
+5159117 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=3209138 final cc=3241382 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 6180.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=3208889 final cc=3241636 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 6213.0 milliseconds
+[CAP] No resets while running  schedule
+5214914 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=3241983 final cc=3292227 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 6245.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=3241746 final cc=3292557 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 6296.0 milliseconds
+[CAP] No resets while running  schedule
+5288689 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=3292904 final cc=3308148 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 6346.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=3292667 final cc=3308402 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 6362.0 milliseconds
+[CAP] No resets while running  schedule
+5327742 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=3308749 final cc=3323971 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 6377.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=3308512 final cc=3324225 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 6393.0 milliseconds
+[CAP] No resets while running  schedule
+5366317 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=3324584 final cc=3354806 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 6408.0 milliseconds
+[CAP] No resets while running  operate
+5407839 printf:  updating tput after operate, value=-30222
+5427132 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=3324335 final cc=3372162 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 6439.0 milliseconds
+[CAP] No resets while running  schedule
+5445557 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=3372507 final cc=3452699 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 6486.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=3372272 final cc=3452957 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 6567.0 milliseconds
+[CAP] No resets while running  schedule
+5551331 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=3453316 final cc=3485560 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 6647.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=3453067 final cc=3485814 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 6680.0 milliseconds
+[CAP] No resets while running  schedule
+5607128 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=3486161 final cc=3536405 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 6712.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=3485924 final cc=3536735 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 6763.0 milliseconds
+[CAP] No resets while running  schedule
+5680903 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=3537082 final cc=3552326 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 6813.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=3536845 final cc=3552580 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 6829.0 milliseconds
+[CAP] No resets while running  schedule
+5719956 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=3552927 final cc=3573183 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 6844.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=3552690 final cc=3573459 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 6865.0 milliseconds
+[CAP] No resets while running  schedule
+5764049 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=3573806 final cc=3589028 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 6885.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=3573569 final cc=3589282 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 6901.0 milliseconds
+[CAP] No resets while running  schedule
+5802624 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=3589641 final cc=3619863 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 6916.0 milliseconds
+[CAP] No resets while running  operate
+5844146 printf:  updating tput after operate, value=-30222
+5862320 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=3589392 final cc=3636096 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 6947.0 milliseconds
+[CAP] No resets while running  schedule
+5880461 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=3636441 final cc=3716633 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 6993.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=3636206 final cc=3716891 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 7073.0 milliseconds
+[CAP] No resets while running  schedule
+5986235 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=3717250 final cc=3749494 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 7154.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=3717001 final cc=3749748 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 7186.0 milliseconds
+[CAP] No resets while running  schedule
+6042032 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=3750095 final cc=3800339 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 7219.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=3749858 final cc=3800669 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 7269.0 milliseconds
+[CAP] No resets while running  schedule
+6115807 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=3801016 final cc=3816260 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 7320.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=3800779 final cc=3816514 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 7335.0 milliseconds
+[CAP] No resets while running  schedule
+6154860 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=3816861 final cc=3832083 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 7351.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=3816624 final cc=3832337 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 7366.0 milliseconds
+[CAP] No resets while running  schedule
+6193435 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=3832696 final cc=3862918 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 7382.0 milliseconds
+[CAP] No resets while running  operate
+6234957 printf:  updating tput after operate, value=-30222
+6252964 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=3832447 final cc=3878986 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 7412.0 milliseconds
+[CAP] No resets while running  schedule
+6271281 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=3879339 final cc=3969561 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 7459.0 milliseconds
+[CAP] No resets while running  send
+6372825 printf:  updating tput after send, value=-90222
+6375104 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=3879096 final cc=3969924 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 7549.0 milliseconds
+[CAP] No resets while running  schedule
+6393470 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=3970269 final cc=4050461 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 7640.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=3970034 final cc=4050719 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 7720.0 milliseconds
+[CAP] No resets while running  schedule
+6499244 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=4051078 final cc=4083322 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 7801.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=4050829 final cc=4083576 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 7833.0 milliseconds
+[CAP] No resets while running  schedule
+6555041 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=4083923 final cc=4134167 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 7866.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=4083686 final cc=4134497 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 7916.0 milliseconds
+[CAP] No resets while running  schedule
+6628816 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=4134844 final cc=4150088 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 7967.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=4134607 final cc=4150342 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 7982.0 milliseconds
+[CAP] No resets while running  schedule
+6667869 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=4150689 final cc=4165911 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 7998.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=4150452 final cc=4166165 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 8013.0 milliseconds
+[CAP] No resets while running  schedule
+6706444 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=4166524 final cc=4196746 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 8029.0 milliseconds
+[CAP] No resets while running  operate
+6747966 printf:  updating tput after operate, value=-30222
+6767259 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=4166275 final cc=4214100 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 8059.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 8107.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=4214210 final cc=4214440 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 8108.0 milliseconds
+[CAP] No resets while running  schedule
+6799513 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=4214785 final cc=4294977 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 8108.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=4214550 final cc=4295235 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 8188.0 milliseconds
+[CAP] No resets while running  schedule
+6905287 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=4295594 final cc=4327838 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 8269.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=4295345 final cc=4328092 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 8301.0 milliseconds
+[CAP] No resets while running  schedule
+6961084 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=4328439 final cc=4378683 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 8334.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=4328202 final cc=4379013 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 8384.0 milliseconds
+[CAP] No resets while running  schedule
+7034859 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=4379360 final cc=4394604 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 8435.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=4379123 final cc=4394858 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 8450.0 milliseconds
+[CAP] No resets while running  schedule
+7073912 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=4395205 final cc=4415461 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 8466.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=4394968 final cc=4415737 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 8486.0 milliseconds
+[CAP] No resets while running  schedule
+7118005 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=4416084 final cc=4431306 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 8507.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=4415847 final cc=4431560 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 8522.0 milliseconds
+[CAP] No resets while running  schedule
+7156580 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=4431919 final cc=4462141 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 8538.0 milliseconds
+[CAP] No resets while running  operate
+7198102 printf:  updating tput after operate, value=-30222
+7216276 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=4431670 final cc=4478376 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 8568.0 milliseconds
+[CAP] No resets while running  schedule
+7234499 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=4478721 final cc=4558913 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 8615.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=4478486 final cc=4559171 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 8695.0 milliseconds
+[CAP] No resets while running  schedule
+7340273 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=4559530 final cc=4591774 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 8776.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=4559281 final cc=4592028 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 8808.0 milliseconds
+[CAP] No resets while running  schedule
+7396070 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=4592375 final cc=4642619 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 8841.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=4592138 final cc=4642949 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 8891.0 milliseconds
+[CAP] No resets while running  schedule
+7469845 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=4643296 final cc=4658540 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 8942.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=4643059 final cc=4658794 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 8957.0 milliseconds
+[CAP] No resets while running  schedule
+7508898 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=4659141 final cc=4674363 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 8973.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=4658904 final cc=4674617 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 8988.0 milliseconds
+[CAP] No resets while running  schedule
+7547473 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=4674976 final cc=4705198 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 9004.0 milliseconds
+[CAP] No resets while running  operate
+7588995 printf:  updating tput after operate, value=-30222
+7607002 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=4674727 final cc=4721264 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 9034.0 milliseconds
+[CAP] No resets while running  schedule
+7625237 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=4721617 final cc=4811839 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 9080.0 milliseconds
+[CAP] No resets while running  send
+7726781 printf:  updating tput after send, value=-90222
+7729060 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=4721374 final cc=4812204 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 9171.0 milliseconds
+[CAP] No resets while running  schedule
+7747148 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=4812549 final cc=4892741 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 9262.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=4812314 final cc=4892999 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 9342.0 milliseconds
+[CAP] No resets while running  schedule
+7852922 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=4893358 final cc=4925602 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 9422.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=4893109 final cc=4925856 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 9455.0 milliseconds
+[CAP] No resets while running  schedule
+7908719 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=4926203 final cc=4976447 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 9487.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=4925966 final cc=4976777 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 9538.0 milliseconds
+[CAP] No resets while running  schedule
+7982494 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=4977124 final cc=4992368 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 9588.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=4976887 final cc=4992622 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 9604.0 milliseconds
+[CAP] No resets while running  schedule
+8021547 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=4992969 final cc=5008191 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 9619.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=4992732 final cc=5008445 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 9635.0 milliseconds
+[CAP] No resets while running  schedule
+8060122 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=5008804 final cc=5039026 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 9650.0 milliseconds
+[CAP] No resets while running  operate
+8101644 printf:  updating tput after operate, value=-30222
+8120937 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=5008555 final cc=5056382 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 9681.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 9728.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=5056492 final cc=5056722 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 9729.0 milliseconds
+[CAP] No resets while running  schedule
+8153273 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=5057067 final cc=5137259 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 9730.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=5056832 final cc=5137517 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 9810.0 milliseconds
+[CAP] No resets while running  schedule
+8259047 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=5137876 final cc=5170120 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 9891.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=5137627 final cc=5170374 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 9923.0 milliseconds
+[CAP] No resets while running  schedule
+8314844 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=5170721 final cc=5220965 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 9956.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=5170484 final cc=5221295 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 10006.0 milliseconds
+[CAP] No resets while running  schedule
+8388619 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=5221642 final cc=5236886 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 10057.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=5221405 final cc=5237140 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 10072.0 milliseconds
+[CAP] No resets while running  schedule
+8427672 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=5237487 final cc=5257743 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 10088.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=5237250 final cc=5258019 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 10108.0 milliseconds
+[CAP] No resets while running  schedule
+8471765 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=5258366 final cc=5273588 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 10129.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=5258129 final cc=5273842 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 10144.0 milliseconds
+[CAP] No resets while running  schedule
+8510340 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=5274201 final cc=5304423 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 10160.0 milliseconds
+[CAP] No resets while running  operate
+8551862 printf:  updating tput after operate, value=-30222
+8570036 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=5273952 final cc=5320656 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 10190.0 milliseconds
+[CAP] No resets while running  schedule
+8588177 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=5321001 final cc=5401193 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 10236.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=5320766 final cc=5401451 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 10317.0 milliseconds
+[CAP] No resets while running  schedule
+8693951 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=5401810 final cc=5434054 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 10397.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=5401561 final cc=5434308 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 10430.0 milliseconds
+[CAP] No resets while running  schedule
+8749748 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=5434655 final cc=5484899 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 10462.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=5434418 final cc=5485229 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 10513.0 milliseconds
+[CAP] No resets while running  schedule
+8823523 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=5485576 final cc=5500820 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 10563.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=5485339 final cc=5501074 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 10579.0 milliseconds
+[CAP] No resets while running  schedule
+8862576 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=5501421 final cc=5516643 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 10594.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=5501184 final cc=5516897 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 10610.0 milliseconds
+[CAP] No resets while running  schedule
+8901151 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=5517256 final cc=5547478 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 10625.0 milliseconds
+[CAP] No resets while running  operate
+8942673 printf:  updating tput after operate, value=-30222
+8960680 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=5517007 final cc=5563546 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 10656.0 milliseconds
+[CAP] No resets while running  schedule
+8978997 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=5563899 final cc=5654121 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 10702.0 milliseconds
+[CAP] No resets while running  send
+9080541 printf:  updating tput after send, value=-90222
+9082820 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=5563656 final cc=5654484 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 10792.0 milliseconds
+[CAP] No resets while running  schedule
+9101186 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=5654829 final cc=5735021 delta cc=80192
+[CAP] Testin execution of  sense for 80192.0 microseconds, with trace at 10883.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=5654594 final cc=5735279 delta cc=80685
+[CAP] Testin execution of  schedule for 80685.0 microseconds, with trace at 10963.0 milliseconds
+[CAP] No resets while running  schedule
+9206960 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=5735638 final cc=5767882 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 11044.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=5735389 final cc=5768136 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 11076.0 milliseconds
+[CAP] No resets while running  schedule
+9262757 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=5768483 final cc=5818727 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 11109.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=5768246 final cc=5819057 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 11159.0 milliseconds
+[CAP] No resets while running  schedule
+9336532 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=5819404 final cc=5834648 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 11210.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=5819167 final cc=5834902 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 11225.0 milliseconds
+[CAP] No resets while running  schedule
+9375585 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=5835249 final cc=5850471 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 11241.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=5835012 final cc=5850725 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 11256.0 milliseconds
+[CAP] No resets while running  schedule
+9414160 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=5851084 final cc=5881306 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 11272.0 milliseconds
+[CAP] No resets while running  operate
+9455682 printf:  updating tput after operate, value=-30222
+9474975 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=5850835 final cc=5898660 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 11302.0 milliseconds
+[CAP] No resets while running  schedule
+9493318 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=5899005 final cc=5979189 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 11350.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=5898770 final cc=5979447 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 11430.0 milliseconds
+[CAP] No resets while running  schedule
+9599164 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=5979806 final cc=6012050 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 11511.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=5979557 final cc=6012304 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 11543.0 milliseconds
+[CAP] No resets while running  schedule
+9654961 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=6012651 final cc=6062895 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 11576.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=6012414 final cc=6063225 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 11626.0 milliseconds
+[CAP] No resets while running  schedule
+9728736 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=6063572 final cc=6078816 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 11677.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=6063335 final cc=6079070 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 11692.0 milliseconds
+[CAP] No resets while running  schedule
+9767789 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=6079417 final cc=6099673 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 11708.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=6079180 final cc=6099949 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 11728.0 milliseconds
+[CAP] No resets while running  schedule
+9811882 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=6100296 final cc=6115518 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 11749.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=6100059 final cc=6115772 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 11764.0 milliseconds
+[CAP] No resets while running  schedule
+9850457 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=6116131 final cc=6146353 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 11780.0 milliseconds
+[CAP] No resets while running  operate
+9891979 printf:  updating tput after operate, value=-30222
+9910153 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=6115882 final cc=6162588 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 11810.0 milliseconds
+[CAP] No resets while running  schedule
+9928376 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=6162933 final cc=6243117 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 11857.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=6162698 final cc=6243375 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 11937.0 milliseconds
+[CAP] No resets while running  schedule
+10034222 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=6243734 final cc=6275978 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 12018.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=6243485 final cc=6276232 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 12050.0 milliseconds
+[CAP] No resets while running  schedule
+10090019 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=6276579 final cc=6326823 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 12083.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=6276342 final cc=6327153 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 12133.0 milliseconds
+[CAP] No resets while running  schedule
+10163794 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=6327500 final cc=6342744 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 12184.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=6327263 final cc=6342998 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 12199.0 milliseconds
+[CAP] No resets while running  schedule
+10202847 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=6343345 final cc=6358567 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 12215.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=6343108 final cc=6358821 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 12230.0 milliseconds
+[CAP] No resets while running  schedule
+10241422 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=6359180 final cc=6389402 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 12246.0 milliseconds
+[CAP] No resets while running  operate
+10282944 printf:  updating tput after operate, value=-30222
+10300951 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=6358931 final cc=6405468 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 12276.0 milliseconds
+[CAP] No resets while running  schedule
+10319186 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=6405821 final cc=6496043 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 12322.0 milliseconds
+[CAP] No resets while running  send
+10420730 printf:  updating tput after send, value=-90222
+10423009 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=6405578 final cc=6496408 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 12413.0 milliseconds
+[CAP] No resets while running  schedule
+10441097 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=6496753 final cc=6576937 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 12503.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=6496518 final cc=6577195 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 12584.0 milliseconds
+[CAP] No resets while running  schedule
+10546943 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=6577554 final cc=6609798 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 12664.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=6577305 final cc=6610052 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 12697.0 milliseconds
+[CAP] No resets while running  schedule
+10602740 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=6610399 final cc=6660643 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 12729.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=6610162 final cc=6660973 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 12780.0 milliseconds
+[CAP] No resets while running  schedule
+10676515 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=6661320 final cc=6676564 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 12830.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=6661083 final cc=6676818 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 12846.0 milliseconds
+[CAP] No resets while running  schedule
+10715568 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=6677165 final cc=6692387 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 12861.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=6676928 final cc=6692641 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 12877.0 milliseconds
+[CAP] No resets while running  schedule
+10754143 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=6693000 final cc=6723222 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 12892.0 milliseconds
+[CAP] No resets while running  operate
+10795665 printf:  updating tput after operate, value=-30222
+10814958 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=6692751 final cc=6740578 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 12923.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 12970.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=6740688 final cc=6740918 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 12971.0 milliseconds
+[CAP] No resets while running  schedule
+10847294 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=6741263 final cc=6821447 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 12972.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=6741028 final cc=6821705 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 13052.0 milliseconds
+[CAP] No resets while running  schedule
+10953140 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=6822064 final cc=6854308 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 13132.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=6821815 final cc=6854562 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 13165.0 milliseconds
+[CAP] No resets while running  schedule
+11008937 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=6854909 final cc=6905153 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 13197.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=6854672 final cc=6905483 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 13248.0 milliseconds
+[CAP] No resets while running  schedule
+11082712 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=6905830 final cc=6921074 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 13299.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=6905593 final cc=6921328 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 13314.0 milliseconds
+[CAP] No resets while running  schedule
+11121765 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=6921675 final cc=6941931 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 13329.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=6921438 final cc=6942207 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 13350.0 milliseconds
+[CAP] No resets while running  schedule
+11165858 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=6942554 final cc=6957776 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 13371.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=6942317 final cc=6958030 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 13386.0 milliseconds
+[CAP] No resets while running  schedule
+11204433 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=6958389 final cc=6988611 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 13401.0 milliseconds
+[CAP] No resets while running  operate
+11245955 printf:  updating tput after operate, value=-30222
+11264129 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=6958140 final cc=7004844 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 13432.0 milliseconds
+[CAP] No resets while running  schedule
+11282270 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=7005189 final cc=7085373 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 13478.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=7004954 final cc=7085631 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 13559.0 milliseconds
+[CAP] No resets while running  schedule
+11388116 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=7085990 final cc=7118234 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 13639.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=7085741 final cc=7118488 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 13671.0 milliseconds
+[CAP] No resets while running  schedule
+11443913 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=7118835 final cc=7169079 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 13704.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=7118598 final cc=7169409 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 13754.0 milliseconds
+[CAP] No resets while running  schedule
+11517688 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=7169756 final cc=7185000 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 13805.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=7169519 final cc=7185254 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 13821.0 milliseconds
+[CAP] No resets while running  schedule
+11556741 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=7185601 final cc=7200823 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 13836.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=7185364 final cc=7201077 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 13851.0 milliseconds
+[CAP] No resets while running  schedule
+11595316 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=7201436 final cc=7231658 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 13867.0 milliseconds
+[CAP] No resets while running  operate
+11636838 printf:  updating tput after operate, value=-30222
+11654845 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=7201187 final cc=7247726 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 13897.0 milliseconds
+[CAP] No resets while running  schedule
+11673162 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=7248079 final cc=7338301 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 13944.0 milliseconds
+[CAP] No resets while running  send
+11774706 printf:  updating tput after send, value=-90222
+11776985 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=7247836 final cc=7338664 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 14034.0 milliseconds
+[CAP] No resets while running  schedule
+11795351 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=7339009 final cc=7419193 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 14125.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=7338774 final cc=7419451 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 14205.0 milliseconds
+[CAP] No resets while running  schedule
+11901197 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=7419810 final cc=7452054 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 14286.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=7419561 final cc=7452308 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 14318.0 milliseconds
+[CAP] No resets while running  schedule
+11956994 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=7452655 final cc=7502899 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 14351.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=7452418 final cc=7503229 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 14401.0 milliseconds
+[CAP] No resets while running  schedule
+12030769 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=7503576 final cc=7518820 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 14452.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=7503339 final cc=7519074 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 14467.0 milliseconds
+[CAP] No resets while running  schedule
+12069822 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=7519421 final cc=7534643 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 14483.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=7519184 final cc=7534897 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 14498.0 milliseconds
+[CAP] No resets while running  schedule
+12108397 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=7535256 final cc=7565478 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 14514.0 milliseconds
+[CAP] No resets while running  operate
+12149919 printf:  updating tput after operate, value=-30222
+12169212 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=7535007 final cc=7582832 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 14544.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 14592.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=7582942 final cc=7583172 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 14593.0 milliseconds
+[CAP] No resets while running  schedule
+12201466 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=7583517 final cc=7663701 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 14593.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=7583282 final cc=7663959 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 14673.0 milliseconds
+[CAP] No resets while running  schedule
+12307312 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=7664318 final cc=7696562 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 14754.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=7664069 final cc=7696816 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 14786.0 milliseconds
+[CAP] No resets while running  schedule
+12363109 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=7697163 final cc=7747407 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 14819.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=7696926 final cc=7747737 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 14869.0 milliseconds
+[CAP] No resets while running  schedule
+12436884 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=7748084 final cc=7763328 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 14920.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=7747847 final cc=7763582 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 14935.0 milliseconds
+[CAP] No resets while running  schedule
+12475937 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=7763929 final cc=7784185 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 14951.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=7763692 final cc=7784461 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 14971.0 milliseconds
+[CAP] No resets while running  schedule
+12520030 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=7784808 final cc=7800030 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 14992.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=7784571 final cc=7800284 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 15007.0 milliseconds
+[CAP] No resets while running  schedule
+12558605 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=7800643 final cc=7830865 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 15023.0 milliseconds
+[CAP] No resets while running  operate
+12600127 printf:  updating tput after operate, value=-30222
+12618301 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=7800394 final cc=7847100 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 15053.0 milliseconds
+[CAP] No resets while running  schedule
+12636524 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=7847445 final cc=7927629 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 15100.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=7847210 final cc=7927887 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 15180.0 milliseconds
+[CAP] No resets while running  schedule
+12742370 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=7928246 final cc=7960490 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 15261.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=7927997 final cc=7960744 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 15293.0 milliseconds
+[CAP] No resets while running  schedule
+12798167 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=7961091 final cc=8011335 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 15326.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=7960854 final cc=8011665 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 15376.0 milliseconds
+[CAP] No resets while running  schedule
+12871942 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=8012012 final cc=8027256 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 15427.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=8011775 final cc=8027510 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 15442.0 milliseconds
+[CAP] No resets while running  schedule
+12910995 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=8027857 final cc=8043079 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 15458.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=8027620 final cc=8043333 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 15473.0 milliseconds
+[CAP] No resets while running  schedule
+12949570 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=8043692 final cc=8073914 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 15489.0 milliseconds
+[CAP] No resets while running  operate
+12991092 printf:  updating tput after operate, value=-30222
+13009099 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8043443 final cc=8089980 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 15519.0 milliseconds
+[CAP] No resets while running  schedule
+13027334 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=8090333 final cc=8180555 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 15566.0 milliseconds
+[CAP] No resets while running  send
+13128878 printf:  updating tput after send, value=-90222
+13131157 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8090090 final cc=8180920 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 15656.0 milliseconds
+[CAP] No resets while running  schedule
+13149245 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=8181265 final cc=8261449 delta cc=80184
+[CAP] Testin execution of  sense for 80184.0 microseconds, with trace at 15747.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=8181030 final cc=8261707 delta cc=80677
+[CAP] Testin execution of  schedule for 80677.0 microseconds, with trace at 15827.0 milliseconds
+[CAP] No resets while running  schedule
+13255091 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=8262066 final cc=8294310 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 15907.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=8261817 final cc=8294564 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 15940.0 milliseconds
+[CAP] No resets while running  schedule
+13310888 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=8294911 final cc=8345155 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 15972.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=8294674 final cc=8345485 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 16023.0 milliseconds
+[CAP] No resets while running  schedule
+13384663 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=8345832 final cc=8361076 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 16073.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=8345595 final cc=8361330 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 16089.0 milliseconds
+[CAP] No resets while running  schedule
+13423716 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=8361677 final cc=8376899 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 16104.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=8361440 final cc=8377153 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 16120.0 milliseconds
+[CAP] No resets while running  schedule
+13462291 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=8377512 final cc=8407734 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 16135.0 milliseconds
+[CAP] No resets while running  operate
+13503813 printf:  updating tput after operate, value=-30222
+13523106 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8377263 final cc=8425090 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 16166.0 milliseconds
+[CAP] No resets while running  schedule
+13541531 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=8425435 final cc=8505701 delta cc=80266
+[CAP] Testin execution of  sense for 80266.0 microseconds, with trace at 16213.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=8425200 final cc=8505959 delta cc=80759
+[CAP] Testin execution of  schedule for 80759.0 microseconds, with trace at 16294.0 milliseconds
+[CAP] No resets while running  schedule
+13647539 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=8506318 final cc=8538562 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 16374.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=8506069 final cc=8538816 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 16407.0 milliseconds
+[CAP] No resets while running  schedule
+13703336 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=8539163 final cc=8589407 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 16439.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=8538926 final cc=8589737 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 16490.0 milliseconds
+[CAP] No resets while running  schedule
+13777111 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=8590084 final cc=8605328 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 16541.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=8589847 final cc=8605582 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 16556.0 milliseconds
+[CAP] No resets while running  schedule
+13816164 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=8605929 final cc=8626185 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 16572.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=8605692 final cc=8626461 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 16592.0 milliseconds
+[CAP] No resets while running  schedule
+13860257 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=8626808 final cc=8642030 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 16613.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=8626571 final cc=8642284 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 16628.0 milliseconds
+[CAP] No resets while running  schedule
+13898832 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=8642643 final cc=8672865 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 16643.0 milliseconds
+[CAP] No resets while running  operate
+13940354 printf:  updating tput after operate, value=-30222
+13958528 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8642394 final cc=8689098 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 16674.0 milliseconds
+[CAP] No resets while running  schedule
+13976669 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=8689443 final cc=8769699 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 16720.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=8689208 final cc=8769957 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 16801.0 milliseconds
+[CAP] No resets while running  schedule
+14082587 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=8770316 final cc=8802560 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 16881.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=8770067 final cc=8802814 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 16914.0 milliseconds
+[CAP] No resets while running  schedule
+14138384 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=8803161 final cc=8853405 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 16946.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=8802924 final cc=8853735 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 16997.0 milliseconds
+[CAP] No resets while running  schedule
+14212159 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=8854082 final cc=8869326 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 17047.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=8853845 final cc=8869580 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 17063.0 milliseconds
+[CAP] No resets while running  schedule
+14251212 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=8869927 final cc=8885149 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 17078.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=8869690 final cc=8885403 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 17094.0 milliseconds
+[CAP] No resets while running  schedule
+14289787 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=8885762 final cc=8915984 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 17109.0 milliseconds
+[CAP] No resets while running  operate
+14331309 printf:  updating tput after operate, value=-30222
+14349316 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8885513 final cc=8932052 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 17140.0 milliseconds
+[CAP] No resets while running  schedule
+14367633 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=8932405 final cc=9022627 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 17186.0 milliseconds
+[CAP] No resets while running  send
+14469177 printf:  updating tput after send, value=-90222
+14471456 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=8932162 final cc=9022990 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 17276.0 milliseconds
+[CAP] No resets while running  schedule
+14489822 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=9023335 final cc=9103591 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 17367.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=9023100 final cc=9103849 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 17447.0 milliseconds
+[CAP] No resets while running  schedule
+14595740 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=9104208 final cc=9136452 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 17528.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=9103959 final cc=9136706 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 17560.0 milliseconds
+[CAP] No resets while running  schedule
+14651537 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=9137053 final cc=9187297 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 17593.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=9136816 final cc=9187627 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 17643.0 milliseconds
+[CAP] No resets while running  schedule
+14725312 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=9187974 final cc=9203218 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 17694.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=9187737 final cc=9203472 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 17710.0 milliseconds
+[CAP] No resets while running  schedule
+14764365 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=9203819 final cc=9219041 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 17725.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=9203582 final cc=9219295 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 17740.0 milliseconds
+[CAP] No resets while running  schedule
+14802940 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=9219654 final cc=9249876 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 17756.0 milliseconds
+[CAP] No resets while running  operate
+14844462 printf:  updating tput after operate, value=-30222
+14863755 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=9219405 final cc=9267230 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 17786.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 17834.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=9267340 final cc=9267570 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 17835.0 milliseconds
+[CAP] No resets while running  schedule
+14896009 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=9267915 final cc=9348171 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 17835.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=9267680 final cc=9348429 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 17916.0 milliseconds
+[CAP] No resets while running  schedule
+15001927 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=9348788 final cc=9381032 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 17996.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=9348539 final cc=9381286 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 18029.0 milliseconds
+[CAP] No resets while running  schedule
+15057724 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=9381633 final cc=9431877 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 18061.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=9381396 final cc=9432207 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 18112.0 milliseconds
+[CAP] No resets while running  schedule
+15131499 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=9432554 final cc=9447798 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 18163.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=9432317 final cc=9448052 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 18178.0 milliseconds
+[CAP] No resets while running  schedule
+15170552 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=9448399 final cc=9468655 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 18194.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=9448162 final cc=9468931 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 18214.0 milliseconds
+[CAP] No resets while running  schedule
+15214645 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=9469278 final cc=9484500 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 18235.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=9469041 final cc=9484754 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 18250.0 milliseconds
+[CAP] No resets while running  schedule
+15253220 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=9485113 final cc=9515335 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 18265.0 milliseconds
+[CAP] No resets while running  operate
+15294742 printf:  updating tput after operate, value=-30222
+15312916 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=9484864 final cc=9531570 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 18296.0 milliseconds
+[CAP] No resets while running  schedule
+15331139 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=9531915 final cc=9612171 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 18342.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=9531680 final cc=9612429 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 18423.0 milliseconds
+[CAP] No resets while running  schedule
+15437057 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=9612788 final cc=9645032 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 18503.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=9612539 final cc=9645286 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 18536.0 milliseconds
+[CAP] No resets while running  schedule
+15492854 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=9645633 final cc=9695877 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 18568.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=9645396 final cc=9696207 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 18619.0 milliseconds
+[CAP] No resets while running  schedule
+15566629 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=9696554 final cc=9711798 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 18669.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=9696317 final cc=9712052 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 18685.0 milliseconds
+[CAP] No resets while running  schedule
+15605682 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=9712399 final cc=9727621 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 18700.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=9712162 final cc=9727875 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 18716.0 milliseconds
+[CAP] No resets while running  schedule
+15644257 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=9728234 final cc=9758456 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 18731.0 milliseconds
+[CAP] No resets while running  operate
+15685779 printf:  updating tput after operate, value=-30222
+15703786 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=9727985 final cc=9774522 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 18762.0 milliseconds
+[CAP] No resets while running  schedule
+15722021 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=9774875 final cc=9865097 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 18808.0 milliseconds
+[CAP] No resets while running  send
+15823565 printf:  updating tput after send, value=-90222
+15825844 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=9774632 final cc=9865462 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 18898.0 milliseconds
+[CAP] No resets while running  schedule
+15843932 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=9865807 final cc=9946063 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 18989.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=9865572 final cc=9946321 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 19069.0 milliseconds
+[CAP] No resets while running  schedule
+15949850 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=9946680 final cc=9978924 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 19150.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=9946431 final cc=9979178 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 19182.0 milliseconds
+[CAP] No resets while running  schedule
+16005647 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=9979525 final cc=10029769 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 19215.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=9979288 final cc=10030099 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 19265.0 milliseconds
+[CAP] No resets while running  schedule
+16079422 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=10030446 final cc=10045690 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 19316.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=10030209 final cc=10045944 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 19331.0 milliseconds
+[CAP] No resets while running  schedule
+16118475 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=10046291 final cc=10061513 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 19347.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=10046054 final cc=10061767 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 19362.0 milliseconds
+[CAP] No resets while running  schedule
+16157050 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=10062126 final cc=10092348 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 19378.0 milliseconds
+[CAP] No resets while running  operate
+16198572 printf:  updating tput after operate, value=-30222
+16217865 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=10061877 final cc=10109704 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 19408.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 19456.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=10109814 final cc=10110044 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 19457.0 milliseconds
+[CAP] No resets while running  schedule
+16250201 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=10110389 final cc=10190645 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 19457.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=10110154 final cc=10190903 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 19538.0 milliseconds
+[CAP] No resets while running  schedule
+16356119 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=10191262 final cc=10223506 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 19618.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=10191013 final cc=10223760 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 19651.0 milliseconds
+[CAP] No resets while running  schedule
+16411916 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=10224107 final cc=10274351 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 19683.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=10223870 final cc=10274681 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 19734.0 milliseconds
+[CAP] No resets while running  schedule
+16485691 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=10275028 final cc=10290272 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 19785.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=10274791 final cc=10290526 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 19800.0 milliseconds
+[CAP] No resets while running  schedule
+16524744 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=10290873 final cc=10311129 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 19815.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=10290636 final cc=10311405 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 19836.0 milliseconds
+[CAP] No resets while running  schedule
+16568837 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=10311752 final cc=10326974 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 19857.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=10311515 final cc=10327228 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 19872.0 milliseconds
+[CAP] No resets while running  schedule
+16607412 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=10327587 final cc=10357809 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 19887.0 milliseconds
+[CAP] No resets while running  operate
+16648934 printf:  updating tput after operate, value=-30222
+16667108 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=10327338 final cc=10374042 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 19918.0 milliseconds
+[CAP] No resets while running  schedule
+16685249 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=10374387 final cc=10454643 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 19964.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=10374152 final cc=10454901 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 20045.0 milliseconds
+[CAP] No resets while running  schedule
+16791167 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=10455260 final cc=10487504 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 20125.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=10455011 final cc=10487758 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 20158.0 milliseconds
+[CAP] No resets while running  schedule
+16846964 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=10488105 final cc=10538349 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 20190.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=10487868 final cc=10538679 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 20241.0 milliseconds
+[CAP] No resets while running  schedule
+16920739 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=10539026 final cc=10554270 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 20291.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=10538789 final cc=10554524 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 20307.0 milliseconds
+[CAP] No resets while running  schedule
+16959792 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=10554871 final cc=10570093 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 20322.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=10554634 final cc=10570347 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 20338.0 milliseconds
+[CAP] No resets while running  schedule
+16998367 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=10570706 final cc=10600928 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 20353.0 milliseconds
+[CAP] No resets while running  operate
+17039889 printf:  updating tput after operate, value=-30222
+17057896 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=10570457 final cc=10616996 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 20384.0 milliseconds
+[CAP] No resets while running  schedule
+17076213 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=10617349 final cc=10707571 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 20430.0 milliseconds
+[CAP] No resets while running  send
+17177757 printf:  updating tput after send, value=-90222
+17180036 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=10617106 final cc=10707934 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 20520.0 milliseconds
+[CAP] No resets while running  schedule
+17198402 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=10708279 final cc=10788535 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 20611.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=10708044 final cc=10788793 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 20691.0 milliseconds
+[CAP] No resets while running  schedule
+17304320 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=10789152 final cc=10821396 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 20772.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=10788903 final cc=10821650 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 20804.0 milliseconds
+[CAP] No resets while running  schedule
+17360117 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=10821997 final cc=10872241 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 20837.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=10821760 final cc=10872571 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 20887.0 milliseconds
+[CAP] No resets while running  schedule
+17433892 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=10872918 final cc=10888162 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 20938.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=10872681 final cc=10888416 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 20953.0 milliseconds
+[CAP] No resets while running  schedule
+17472945 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=10888763 final cc=10903985 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 20969.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=10888526 final cc=10904239 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 20984.0 milliseconds
+[CAP] No resets while running  schedule
+17511520 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=10904598 final cc=10934820 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 21000.0 milliseconds
+[CAP] No resets while running  operate
+17553042 printf:  updating tput after operate, value=-30222
+17572335 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=10904349 final cc=10952174 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 21030.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 21078.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=10952284 final cc=10952514 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 21079.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 21079.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=10952624 final cc=10952854 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 21080.0 milliseconds
+[CAP] No resets while running  schedule
+17618500 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=10953199 final cc=11033455 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 21081.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=10952964 final cc=11033713 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 21161.0 milliseconds
+[CAP] No resets while running  schedule
+17724418 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=11034072 final cc=11066316 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 21242.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=11033823 final cc=11066570 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 21274.0 milliseconds
+[CAP] No resets while running  schedule
+17780215 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=11066917 final cc=11117161 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 21307.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=11066680 final cc=11117491 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 21357.0 milliseconds
+[CAP] No resets while running  schedule
+17853990 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=11117838 final cc=11133082 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 21408.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=11117601 final cc=11133336 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 21423.0 milliseconds
+[CAP] No resets while running  schedule
+17893043 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=11133683 final cc=11153939 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 21439.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=11133446 final cc=11154215 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 21459.0 milliseconds
+[CAP] No resets while running  schedule
+17937136 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=11154562 final cc=11169784 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 21480.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=11154325 final cc=11170038 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 21495.0 milliseconds
+[CAP] No resets while running  schedule
+17975711 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=11170397 final cc=11200619 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 21511.0 milliseconds
+[CAP] No resets while running  operate
+18017233 printf:  updating tput after operate, value=-30222
+18035407 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=11170148 final cc=11216854 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 21541.0 milliseconds
+[CAP] No resets while running  schedule
+18053630 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=11217199 final cc=11297455 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 21588.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=11216964 final cc=11297713 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 21668.0 milliseconds
+[CAP] No resets while running  schedule
+18159548 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=11298072 final cc=11330316 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 21749.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=11297823 final cc=11330570 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 21781.0 milliseconds
+[CAP] No resets while running  schedule
+18215345 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=11330917 final cc=11381161 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 21814.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=11330680 final cc=11381491 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 21864.0 milliseconds
+[CAP] No resets while running  schedule
+18289120 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=11381838 final cc=11397082 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 21915.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=11381601 final cc=11397336 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 21930.0 milliseconds
+[CAP] No resets while running  schedule
+18328173 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=11397683 final cc=11412905 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 21946.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=11397446 final cc=11413159 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 21961.0 milliseconds
+[CAP] No resets while running  schedule
+18366748 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=11413518 final cc=11443740 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 21977.0 milliseconds
+[CAP] No resets while running  operate
+18408270 printf:  updating tput after operate, value=-30222
+18426277 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=11413269 final cc=11459806 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 22007.0 milliseconds
+[CAP] No resets while running  schedule
+18444512 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=11460159 final cc=11550381 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 22053.0 milliseconds
+[CAP] No resets while running  send
+18546056 printf:  updating tput after send, value=-90222
+18548335 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=11459916 final cc=11550746 delta cc=90830
+[CAP] Testin execution of  schedule for 90830.0 microseconds, with trace at 22144.0 milliseconds
+[CAP] No resets while running  schedule
+18566423 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=11551091 final cc=11631347 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 22234.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=11550856 final cc=11631605 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 22315.0 milliseconds
+[CAP] No resets while running  schedule
+18672341 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=11631964 final cc=11664208 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 22395.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=11631715 final cc=11664462 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 22428.0 milliseconds
+[CAP] No resets while running  schedule
+18728138 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=11664809 final cc=11715053 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 22460.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=11664572 final cc=11715383 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 22511.0 milliseconds
+[CAP] No resets while running  schedule
+18801913 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=11715730 final cc=11730974 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 22561.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=11715493 final cc=11731228 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 22577.0 milliseconds
+[CAP] No resets while running  schedule
+18840966 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=11731575 final cc=11746797 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 22592.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=11731338 final cc=11747051 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 22608.0 milliseconds
+[CAP] No resets while running  schedule
+18879541 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=11747410 final cc=11777632 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 22623.0 milliseconds
+[CAP] No resets while running  operate
+18921063 printf:  updating tput after operate, value=-30222
+18940356 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=11747161 final cc=11794988 delta cc=47827
+[CAP] Testin execution of  schedule for 47827.0 microseconds, with trace at 22654.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 22701.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=11795098 final cc=11795328 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 22702.0 milliseconds
+[CAP] No resets while running  schedule
+18972692 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=11795673 final cc=11875929 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 22703.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=11795438 final cc=11876187 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 22783.0 milliseconds
+[CAP] No resets while running  schedule
+19078610 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=11876546 final cc=11908790 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 22864.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=11876297 final cc=11909044 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 22896.0 milliseconds
+[CAP] No resets while running  schedule
+19134407 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=11909391 final cc=11959635 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 22929.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=11909154 final cc=11959965 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 22979.0 milliseconds
+[CAP] No resets while running  schedule
+19208182 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=11960312 final cc=11975556 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 23030.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=11960075 final cc=11975810 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 23045.0 milliseconds
+[CAP] No resets while running  schedule
+19247235 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=11976157 final cc=11996413 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 23061.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=11975920 final cc=11996689 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 23081.0 milliseconds
+[CAP] No resets while running  schedule
+19291328 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=11997036 final cc=12012258 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 23102.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=11996799 final cc=12012512 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 23117.0 milliseconds
+[CAP] No resets while running  schedule
+19329903 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=12012871 final cc=12043093 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 23133.0 milliseconds
+[CAP] No resets while running  operate
+19371425 printf:  updating tput after operate, value=-30222
+19389599 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=12012622 final cc=12059326 delta cc=46704
+[CAP] Testin execution of  schedule for 46704.0 microseconds, with trace at 23163.0 milliseconds
+[CAP] No resets while running  schedule
+19407740 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=12059671 final cc=12139927 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 23210.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=12059436 final cc=12140185 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 23290.0 milliseconds
+[CAP] No resets while running  schedule
+19513658 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=12140544 final cc=12172788 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 23371.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=12140295 final cc=12173042 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 23403.0 milliseconds
+[CAP] No resets while running  schedule
+19569455 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=12173389 final cc=12223633 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 23436.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=12173152 final cc=12223963 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 23486.0 milliseconds
+[CAP] No resets while running  schedule
+19643230 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=12224310 final cc=12239554 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 23537.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=12224073 final cc=12239808 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 23552.0 milliseconds
+[CAP] No resets while running  schedule
+19682283 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=12240155 final cc=12255377 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 23568.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=12239918 final cc=12255631 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 23583.0 milliseconds
+[CAP] No resets while running  schedule
+19720858 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=12255990 final cc=12286212 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 23599.0 milliseconds
+[CAP] No resets while running  operate
+19762380 printf:  updating tput after operate, value=-30222
+19780387 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=12255741 final cc=12302280 delta cc=46539
+[CAP] Testin execution of  schedule for 46539.0 microseconds, with trace at 23629.0 milliseconds
+[CAP] No resets while running  schedule
+19798704 printf:  running SEND
+[GET_CCOUNT] Requested timer task --- start cc=12302633 final cc=12392855 delta cc=90222
+[CAP] Testin execution of  send for 90222.0 microseconds, with trace at 23675.0 milliseconds
+[CAP] No resets while running  send
+19900248 printf:  updating tput after send, value=-90222
+19902527 printf:  app_2 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=12302390 final cc=12393218 delta cc=90828
+[CAP] Testin execution of  schedule for 90828.0 microseconds, with trace at 23766.0 milliseconds
+[CAP] No resets while running  schedule
+19920893 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=12393563 final cc=12473819 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 23856.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=12393328 final cc=12474077 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 23937.0 milliseconds
+[CAP] No resets while running  schedule
+20026811 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=12474436 final cc=12506680 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 24017.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=12474187 final cc=12506934 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 24050.0 milliseconds
+[CAP] No resets while running  schedule
+20082608 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=12507281 final cc=12557525 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 24082.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=12507044 final cc=12557855 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 24133.0 milliseconds
+[CAP] No resets while running  schedule
+20156383 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=12558202 final cc=12573446 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 24183.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=12557965 final cc=12573700 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 24199.0 milliseconds
+[CAP] No resets while running  schedule
+20195436 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=12574047 final cc=12589269 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 24214.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=12573810 final cc=12589523 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 24230.0 milliseconds
+[CAP] No resets while running  schedule
+20234011 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=12589882 final cc=12620104 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 24245.0 milliseconds
+[CAP] No resets while running  operate
+20275533 printf:  updating tput after operate, value=-30222
+20294826 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=12589633 final cc=12637458 delta cc=47825
+[CAP] Testin execution of  schedule for 47825.0 microseconds, with trace at 24276.0 milliseconds
+[CAP] No resets while running  schedule
+[CAP] Testin execution of sleep for 1000.0 microseconds, with trace at 24323.0 milliseconds
+[CAP] No resets while running sleep
+[GET_CCOUNT] Requested timer scheduler --- start cc=12637568 final cc=12637798 delta cc=230
+[CAP] Testin execution of  schedule for 230.0 microseconds, with trace at 24324.0 milliseconds
+[CAP] No resets while running  schedule
+20327080 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=12638143 final cc=12718399 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 24325.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=12637908 final cc=12718657 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 24405.0 milliseconds
+[CAP] No resets while running  schedule
+20432998 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=12719016 final cc=12751260 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 24486.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=12718767 final cc=12751514 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 24518.0 milliseconds
+[CAP] No resets while running  schedule
+20488795 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=12751861 final cc=12802105 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 24551.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=12751624 final cc=12802435 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 24601.0 milliseconds
+[CAP] No resets while running  schedule
+20562570 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=12802782 final cc=12818026 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 24652.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=12802545 final cc=12818280 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 24667.0 milliseconds
+[CAP] No resets while running  schedule
+20601623 printf:  running COMPRESS
+[GET_CCOUNT] Requested timer task --- start cc=12818627 final cc=12838883 delta cc=20256
+[CAP] Testin execution of  compress for 20256.0 microseconds, with trace at 24683.0 milliseconds
+[CAP] No resets while running  compress
+[GET_CCOUNT] Requested timer scheduler --- start cc=12818390 final cc=12839159 delta cc=20769
+[CAP] Testin execution of  schedule for 20769.0 microseconds, with trace at 24703.0 milliseconds
+[CAP] No resets while running  schedule
+20645716 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=12839506 final cc=12854728 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 24724.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=12839269 final cc=12854982 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 24739.0 milliseconds
+[CAP] No resets while running  schedule
+20684291 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=12855341 final cc=12885563 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 24755.0 milliseconds
+[CAP] No resets while running  operate
+20725813 printf:  updating tput after operate, value=-30222
+20743987 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=12855092 final cc=12901798 delta cc=46706
+[CAP] Testin execution of  schedule for 46706.0 microseconds, with trace at 24785.0 milliseconds
+[CAP] No resets while running  schedule
+20762210 printf:  running SENSE
+[GET_CCOUNT] Requested timer task --- start cc=12902143 final cc=12982399 delta cc=80256
+[CAP] Testin execution of  sense for 80256.0 microseconds, with trace at 24832.0 milliseconds
+[CAP] No resets while running  sense
+[GET_CCOUNT] Requested timer scheduler --- start cc=12901908 final cc=12982657 delta cc=80749
+[CAP] Testin execution of  schedule for 80749.0 microseconds, with trace at 24912.0 milliseconds
+[CAP] No resets while running  schedule
+20868128 printf:  running MEDIAN
+[GET_CCOUNT] Requested timer task --- start cc=12983016 final cc=13015260 delta cc=32244
+[CAP] Testin execution of  median for 32245.0 microseconds, with trace at 24993.0 milliseconds
+[CAP] No resets while running  median
+[GET_CCOUNT] Requested timer scheduler --- start cc=12982767 final cc=13015514 delta cc=32747
+[CAP] Testin execution of  schedule for 32747.0 microseconds, with trace at 25025.0 milliseconds
+[CAP] No resets while running  schedule
+20923925 printf:  running LOWPASS
+[GET_CCOUNT] Requested timer task --- start cc=13015861 final cc=13066105 delta cc=50244
+[CAP] Testin execution of  lowpass for 50244.0 microseconds, with trace at 25058.0 milliseconds
+[CAP] No resets while running  lowpass
+[GET_CCOUNT] Requested timer scheduler --- start cc=13015624 final cc=13066435 delta cc=50811
+[CAP] Testin execution of  schedule for 50811.0 microseconds, with trace at 25108.0 milliseconds
+[CAP] No resets while running  schedule
+20997700 printf:  running MAGNITUDE
+[GET_CCOUNT] Requested timer task --- start cc=13066782 final cc=13082026 delta cc=15244
+[CAP] Testin execution of  magnitude for 15244.0 microseconds, with trace at 25159.0 milliseconds
+[CAP] No resets while running  magnitude
+[GET_CCOUNT] Requested timer scheduler --- start cc=13066545 final cc=13082280 delta cc=15735
+[CAP] Testin execution of  schedule for 15735.0 microseconds, with trace at 25174.0 milliseconds
+[CAP] No resets while running  schedule
+21036753 printf:  running CLASSIFY
+[GET_CCOUNT] Requested timer task --- start cc=13082627 final cc=13097849 delta cc=15222
+[CAP] Testin execution of  classify for 15222.0 microseconds, with trace at 25190.0 milliseconds
+[CAP] No resets while running  classify
+[GET_CCOUNT] Requested timer scheduler --- start cc=13082390 final cc=13098103 delta cc=15713
+[CAP] Testin execution of  schedule for 15714.0 microseconds, with trace at 25205.0 milliseconds
+[CAP] No resets while running  schedule
+21075328 printf:  running OPERATE
+[GET_CCOUNT] Requested timer task --- start cc=13098462 final cc=13128684 delta cc=30222
+[CAP] Testin execution of  operate for 30222.0 microseconds, with trace at 25221.0 milliseconds
+[CAP] No resets while running  operate
+21116850 printf:  updating tput after operate, value=-30222
+21134857 printf:  app_1 underperforming
+[GET_CCOUNT] Requested timer scheduler --- start cc=13098213 final cc=13144750 delta cc=46537
+[CAP] Testin execution of  schedule for 46537.0 microseconds, with trace at 25251.0 milliseconds
+[CAP] V trace ended
+SIZE: 25271
+Execution terminated ([CAP] V trace ended after 0 lifecycles; R15=000d; PC=7462; prev PC=745c; SP=238c)

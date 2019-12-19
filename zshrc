@@ -80,7 +80,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-    # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
     source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     # autosuggestions
     # git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
