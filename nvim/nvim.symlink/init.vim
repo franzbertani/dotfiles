@@ -2,6 +2,7 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'airblade/vim-rooter'
 Plug 'caksoylar/vim-mysticaltutor'
 Plug 'dag/vim-fish'
 " Plug 'dense-analysis/ale'
@@ -20,7 +21,14 @@ Plug 'dag/vim-fish'
 Plug 'farmergreg/vim-lastplace'
 Plug 'itchyny/lightline.vim'
     let g:lightline = {
-        \ 'colorscheme': 'jellybeans',
+        \ 'colorscheme': 'one',
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+        \ },
+        \ 'component_function': {
+        \   'gitbranch': 'fugitive#head'
+        \ },
         \ }
 Plug '/usr/local/opt/fzf'
 Plug 'jiangmiao/auto-pairs'
@@ -49,10 +57,12 @@ Plug 'mhinz/vim-startify'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_node_path = '/usr/local/bin/node'
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'sickill/vim-pasta'
 Plug 'tell-k/vim-autopep8'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -82,6 +92,15 @@ let g:coc_snippet_next = '<tab>'
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -136,7 +155,8 @@ set hidden
 set mouse=a
 set noshowmode
 set number
-set relativenumber
+" set relativenumber
+set cursorline
 set numberwidth=1
 set pumblend=6
 set scrolloff=10
@@ -174,6 +194,8 @@ set wildmenu                          " Tab autocomplete in command mode
 
 " Leader {{{
 
+nnoremap <silent> <Leader><Space> :FZF <CR>
+nnoremap <silent> <Leader>b :Buffers <CR>
 nnoremap <Leader>k :%s/\<<C-r><C-w>\>//gc<Left><Left><Left>
 vnoremap <Leader>k y :%s/<C-r>"//gc<Left><Left><Left>
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
