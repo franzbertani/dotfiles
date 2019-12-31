@@ -1,14 +1,20 @@
 #+STARTIP: overview
+#+TITLE: Emacs Configuration
+#+OPTIONS: toc:nil num:nil
+
+* Use sensible-defaults
+  [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] is a collection of the most common defaults, conveniently stored in one place.
+#+BEGIN_SRC emacs-lisp
+(load-file (expand-file-name "sensible-defaults.el" user-emacs-directory))
+(sensible-defaults/use-all-settings)
+(sensible-defaults/use-all-keybindings)
+#+END_SRC
+
 * Interface tweaks
 #+BEGIN_SRC emacs-lisp
-(setq inhibit-splash-screen t
-      inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
 (tool-bar-mode -1)
-(show-paren-mode 1)
 (when (boundp 'scoll-bar-mode)
   (scroll-bar-mode -1))
-
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
 (global-set-key (kbd "<f5>") 'revert-buffer)
@@ -20,6 +26,58 @@
 (defalias 'list-buffers 'ibuffer)
 #+END_SRC
 
+* Disable visual bell
+  I don't need a bell after all...
+#+BEGIN_SRC emacs-lisp
+(setq ring-bell-function 'ignore)
+
+#+END_SRC
+* Good old cursor line
+#+BEGIN_SRC emacs-lisp
+(global-hl-line-mode)
+
+#+END_SRC
+* Use =moody= to tweak mode line
+  With some functions to fix the weird separator render on macOs.
+#+BEGIN_SRC emacs-lisp
+
+;; pl functions copied from powerline
+;; https://github.com/milkypostman/powerline/blob/master/powerline-separators.el
+  (defun pl/color-xyz-to-apple-rgb (X Y Z)
+    "Convert CIE X Y Z colors to Apple RGB color space."
+    (let ((r (+ (* 3.2404542 X) (* -1.5371385 Y) (* -0.4985314 Z)))
+          (g (+ (* -0.9692660 X) (* 1.8760108 Y) (* 0.0415560 Z)))
+          (b (+ (* 0.0556434 X) (* -0.2040259 Y) (* 1.0572252 Z))))
+      (list (expt r (/ 1.8)) (expt g (/ 1.8)) (expt b (/ 1.8)))))
+
+  (defun pl/color-srgb-to-apple-rgb (red green blue)
+    "Convert RED GREEN BLUE colors from sRGB color space to Apple RGB.
+  RED, GREEN and BLUE should be between 0.0 and 1.0, inclusive."
+    (apply 'pl/color-xyz-to-apple-rgb (color-srgb-to-xyz red green blue)))
+
+  (defun linus/hex-to-apple-rgb-hex (hex)
+    (apply #'color-rgb-to-hex
+      (apply #'pl/color-srgb-to-apple-rgb (color-name-to-rgb hex))))
+
+  (defun linus/moody-slant (direction c1 c2 c3 &optional height)
+    (apply
+      #'moody-slant
+      direction
+      (linus/hex-to-apple-rgb-hex c1)
+      (linus/hex-to-apple-rgb-hex c2)
+      (linus/hex-to-apple-rgb-hex c3)
+      height))
+
+    (setq moody-slant-function 'linus/moody-slant)
+
+(use-package moody
+  :ensure t
+  :config
+  (setq x-underline-at-descent-line t)
+  (moody-replace-mode-line-buffer-identification)
+  (moody-replace-vc-mode))
+
+#+END_SRC
 * Remember cursor position
   Cursor positions are stored in `saveplace` in `user-emacs-directory`
 #+BEGIN_SRC emacs-lisp
@@ -46,21 +104,42 @@
   ((dired-mode) . all-the-icons-dired-mode))
 #+END_SRC
 
+* Paredit and rainbow delimiters, expecially in lisp
+#+BEGIN_SRC emacs-lisp
+(use-package paredit
+:ensure t)
+(use-package rainbow-delimiters
+:ensure t)
+
+(setq lispy-mode-hooks
+      '(clojure-mode-hook
+        emacs-lisp-mode-hook
+        lisp-mode-hook
+        scheme-mode-hook))
+
+(dolist (hook lispy-mode-hooks)
+  (add-hook hook (lambda ()
+                   (setq show-paren-style 'expression)
+                   (paredit-mode)
+                   (rainbow-delimiters-mode))))
+
+
+#+END_SRC
 * Doom themes
   Nice themes. I currently use doom-one.
   It has a nice option to enable flashing the mode line instead of visual bell.
 #+BEGIN_SRC emacs-lisp
-(use-package doom-themes
-  :ensure t
-  :config
-  ;; Global settings (defaults)
-  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
-        doom-themes-enable-italic t) ; if nil, italics is universally disabled
-  (load-theme 'doom-one t)
-  ;; Enable flashing mode-line on errors
-  (doom-themes-visual-bell-config)
-  ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
+  (use-package doom-themes
+    :ensure t
+    :config
+    ;; Global settings (defaults)
+    (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+	  doom-themes-enable-italic t) ; if nil, italics is universally disabled
+    (load-theme 'doom-one t)
+    ;; Enable flashing mode-line on errors
+    ;; (doom-themes-visual-bell-config)
+    ;; Corrects (and improves) org-mode's native fontification.
+    (doom-themes-org-config))
 #+END_SRC
 
 * Exec path from shell
@@ -131,7 +210,7 @@
   It provides help on keybindings, showing a legend 1 second after C-x.
 #+BEGIN_SRC emacs-lisp
 (use-package which-key
-  :ensure t 
+  :ensure t
   :config
   (which-key-mode))
 #+END_SRC
