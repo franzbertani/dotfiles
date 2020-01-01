@@ -5,9 +5,10 @@
 * Use sensible-defaults
   [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] is a collection of the most common defaults, conveniently stored in one place.
 #+BEGIN_SRC emacs-lisp
-(load-file (expand-file-name "sensible-defaults.el" user-emacs-directory))
-(sensible-defaults/use-all-settings)
-(sensible-defaults/use-all-keybindings)
+  (load-file (expand-file-name "sensible-defaults.el" user-emacs-directory))
+  (sensible-defaults/use-all-settings)
+  (sensible-defaults/use-all-keybindings)
+
 #+END_SRC
 
 * Interface tweaks
@@ -223,4 +224,20 @@
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda() (org-bullets-mode 1))))
+#+END_SRC
+* PDF-tools
+  To address [[https://github.com/politza/pdf-tools/issues/293][slow loading issues]].
+#+BEGIN_SRC emacs-lisp
+(setq pdf-view-use-unicode-ligther nil)
+#+END_SRC
+
+  pdf-loader-install should lazily execute the command.
+#+BEGIN_SRC emacs-lisp
+  (use-package pdf-tools
+    :ensure t
+    :pin manual
+    :config
+    (pdf-loader-install)
+    (setq-default pdf-view-display-size 'fit-width)
+    (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward))
 #+END_SRC
