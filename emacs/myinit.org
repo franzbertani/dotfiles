@@ -34,10 +34,45 @@
 (setq ring-bell-function 'ignore)
 
 #+END_SRC
-* Good old cursor line
+* Evil
 #+BEGIN_SRC emacs-lisp
-(global-hl-line-mode)
+  (setq evil-want-abbrev-expand-on-insert-exit nil)
+  (setq evil-want-keybinding nil)
 
+  (use-package evil
+    :ensure t
+    :config
+    (evil-mode 1))
+
+   ;; bind ':ls' command to 'ibuffer instead of 'list-buffers
+    (evil-ex-define-cmd "ls" 'ibuffer)
+
+  (use-package evil-collection
+    :ensure t
+    :after evil
+    :config
+    (evil-collection-init))
+
+  (use-package evil-surround
+    :ensure t
+    :config
+    (global-evil-surround-mode 1))
+
+  (use-package evil-commentary
+    :ensure t
+    :config
+    (evil-commentary-mode))
+
+  (use-package evil-org
+    :ensure t
+    :after org
+    :config
+    (add-hook 'org-mode-hook 'evil-org-mode)
+    (add-hook 'evil-org-mode-hook
+		(lambda ()
+		(evil-org-set-key-theme)))
+    (require 'evil-org-agenda)
+    (evil-org-agenda-set-keys))
 #+END_SRC
 * Use =moody= to tweak mode line
   With some functions to fix the weird separator render on macOs.
@@ -78,6 +113,17 @@
   (setq x-underline-at-descent-line t)
   (moody-replace-mode-line-buffer-identification)
   (moody-replace-vc-mode))
+
+#+END_SRC
+* Use =minions= to hide all minor modes
+  Prevents the needs to add =:diminish=
+#+BEGIN_SRC emacs-lisp
+  (use-package minions
+    :ensure t
+    :config
+    (setq minions-mode-line-lighter ""
+	  minions-mode-line-delimiters '("" . ""))
+    (minions-mode 1))
 
 #+END_SRC
 * Remember cursor position
@@ -208,6 +254,17 @@
     ("C-'" . avy-goto-char-2))
 #+END_SRC
 
+* Company
+#+BEGIN_SRC emacs-lisp
+  (use-package company
+    :ensure t)
+  (add-hook 'after-init-hook 'global-company-mode)
+ #+END_SRC
+
+Use =M-SPC= for completion
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "M-SPC") 'company-complete-common)
+#+END_SRC
 * Which key
   It provides help on keybindings, showing a legend 1 second after C-x.
 #+BEGIN_SRC emacs-lisp
@@ -225,7 +282,43 @@
   :config
   (add-hook 'org-mode-hook (lambda() (org-bullets-mode 1))))
 #+END_SRC
-* PDF-tools
+* Flyckeck
+#+BEGIN_SRC emacs-lisp
+  (use-package flycheck
+    :ensure t
+    :init
+    (global-flycheck-mode t))
+
+#+END_SRC
+
+* Python stuff
+#+BEGIN_SRC emacs-lisp
+  (use-package elpy
+    :ensure t
+    :init
+    (elpy-enable)
+    :config
+    (remove-hook 'elpy-modules 'elpy-module-flymake)
+    (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+  (use-package company-jedi
+    :ensure t)
+  (add-to-list 'company-backends 'company-jedi)
+  (setq jedi::complete-on-dot t)
+#+END_SRC
+* Yasnippet
+#+BEGIN_SRC emacs-lisp
+      (use-package yasnippet
+	:ensure t
+	:init
+	(yas-global-mode 1))
+
+  (use-package yasnippet-snippets
+    :ensure t)
+
+#+END_SRC
+* PDF-tool
+
   To address [[https://github.com/politza/pdf-tools/issues/293][slow loading issues]].
 #+BEGIN_SRC emacs-lisp
 (setq pdf-view-use-unicode-ligther nil)
@@ -238,6 +331,40 @@
     :pin manual
     :config
     (pdf-loader-install)
-    (setq-default pdf-view-display-size 'fit-width)
+    (setq-default pdf-view-display-size 'fit-page)
     (define-key pdf-view-mode-map (kbd "C-s") 'isearch-forward))
+#+END_SRC
+
+* LaTeX stuff
+  First of all =auctex-latexmk= so that auctex plays nicely with latexmk.
+#+BEGIN_SRC emacs-lisp
+  (use-package auctex-latexmk
+    :ensure t
+    :config
+    (auctex-latexmk-setup)
+    (setq auctex-latexmk-inherit-TeX-PDF-mode t))
+
+  (use-package company-auctex
+    :ensure t
+    :init
+    (company-auctex-init))
+
+  (use-package tex
+    :ensure auctex
+    :config (progn
+	      (setq TeX-source-correlate-mode t)
+	      (setq-default TeX-master nil)
+	      (setq TeX-source-correlate-method 'synctex)
+	      (require 'reftex)
+	      (setq reftex-plug-into-AUCTeX t)
+	      (setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+		    TeX-source-correlate-start-server t)
+	      ;; Update PDF buffers after successful LaTeX runs
+	      (add-hook 'TeX-after-compilation-finished-functions
+			#'TeX-revert-document-buffer)
+	      (add-hook 'LaTeX-mode-hook
+			(lambda ()
+			  (reftex-mode t)
+			  (flyspell-mode t)))))
+
 #+END_SRC

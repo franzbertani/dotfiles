@@ -50,11 +50,10 @@ Plug 'lervag/vimtex'
       \   'default' : 0,
       \ },
       \}
-
-" Plug 'ludovicchabant/vim-gutentags'
+Plug 'luochen1990/rainbow'
+    let g:rainbow_active = 1
 Plug 'matze/vim-move'
 Plug 'mhinz/vim-startify'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_node_path = '/usr/local/bin/node'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
@@ -202,7 +201,7 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 "}}}
 
 " General {{{
-
+set shell=/usr/local/bin/zsh
 let g:python3_host_prog = '/usr/local/bin/python3'
 "}}}
 
@@ -227,7 +226,7 @@ set incsearch
 set inccommand=nosplit
 set hlsearch
 nnoremap <silent> ,<space> :nohlsearch<CR>
-set ignorecase 
+set ignorecase
 set smartcase
 " }}}
 
