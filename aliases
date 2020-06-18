@@ -8,9 +8,11 @@ alias vimrc="nvim ~/.config/nvim/init.vim"
 
 alias del="rmtrash"
 
-alias tesi="cd ~/Documents/tesi/src"
-alias note="cd ~/note; ./start.sh"
-
 alias gdm="git add . ; git commit -m \"commento inutile\"; git push"
 
-alias mspcomp="sh /Users/francesco/condivisaFra/msp430/compile.sh"
+alias python="python3"
+
+alias ls="lsd --group-dirs first"
+alias l="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
